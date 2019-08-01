@@ -1,3 +1,17 @@
+
+@font-face {
+    font-family: 'playfair_displayregular';
+    src: url('../fonts/playfair/playfairdisplay.eot');
+    src: url('../fonts/playfair/playfairdisplay.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/playfair/playfairdisplay.woff2') format('woff2'),
+         url('../fonts/playfair/playfairdisplay.woff') format('woff'),
+         url('../fonts/playfair/playfairdisplay.ttf') format('truetype'),
+         url('../fonts/playfair/playfairdisplay.svg#playfair_displayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 // Core variables and mixins
 
 @import "components/vars";
@@ -37,21 +51,69 @@
 // 	height: 100%;
 // }
 .container-fluid{
-	max-width: 1346px;
+	max-width: 1351px;
 	// padding: 0;
 	position: relative;
 	width: 100%;
 }
 
 
-// .page-content{
-// 	display: table-cell;
-// 	height: 100%;
-// }
+.page-content{
+	padding-top: 40px;
+	&>.container-fluid{
+		max-width: 894px;
+	}
+}
 
 
+.breadcrumbs{
+	.container-fluid{
+		max-width: 894px;
+	}
+	margin-bottom: 20px;
+	font-size: 13px;
+}
 
+.breadcrumbs__item{
+	color: #000;
+	display: inline-block;
+	font-weight: 300;
+}
+a.breadcrumbs__item{
+	margin-right: 20px;
+	position: relative;
+	&:hover{
+		color: #929292; 
+		&:before{
+			opacity: 1;
+		}
+	}
+	&:after{
+		content: "—";
+		display: inline-block;
+		position: absolute;
+		left: calc(100% + 5px);
+		top: 1px;
+	}
+	&:before{
+		content: "";
+		display: inline-block;
+		width: 100%;
+		height: 1px;
+		background: #000;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		transition: opacity 0.3s ease;
+		opacity: 0;
+	}
+}
 
+.page-title{
+	.container-fluid{
+		max-width: 894px;
+	}
+}
 
 
 
