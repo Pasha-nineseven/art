@@ -26,10 +26,13 @@ gulp.task('sass', function(){
 gulp.task('scripts', function(){
     return gulp.src([
         'app/libs/jquery/dist/jquery.min.js',
+        'app/libs/ui/ui.js',
         'app/libs/modernizr/modernizr.min.js',
         'app/libs/flexibility/flexibility.js',
-        // 'app/libs/magnific/jquery.magnific-popup.js',
+        'app/libs/fancybox/jquery.fancybox.js',
         'app/libs/slick/slick.min.js',
+        'app/libs/formstyler/jquery.formstyler.min.js',
+        'app/libs/tooltip/tooltipster.bundle.min.js',
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
