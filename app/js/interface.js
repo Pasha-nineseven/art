@@ -5,10 +5,18 @@ $(document).ready(function() {
 	// })
 
 	setFullWidth();
+    ymaps.ready(initializeMapOffice);
+    ymaps.ready(initializeMapStock);
 
 	//FS
     if ($('.fs').length>0) {
     	$('.fs').styler();
+    }
+    //TABS
+    if ($('.resp-tabs').length>0) {
+        $('.resp-tabs').responsiveTabs({
+            startCollapsed: 'accordion'
+        });
     }
 
     //TOOLTIP
@@ -38,46 +46,57 @@ $(document).ready(function() {
 		});
 	}
 
-
+    //POPUP-GALLERY
 	$(".js-gallery").fancybox({
         speed : 330,
         transitionEffect: "slide", 
         animationEffect: "zoom-in-out", 
-        //toolbar  : false,
         infobar: false,
         idleTime: false,
-        // onActivate: function(){
-        //     alert(1);
-        //     $(".fancybox-caption").clone().appendTo(".fancybox-content"); 
-        // },
-        // beforeShow: function(){
-        //     var is_Mac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
-        //     if (is_Mac){
-        //         $('.page-header').addClass('mHidden');
-        //     }
-        //     $('.page-header').css({'overflow-y': 'scroll'});
-        //     $('#pages').hide();
-        // },
-        // afterClose: function() {
-        //     var is_Mac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
-        //     if (is_Mac){
-        //         $('.page-header').removeClass('mHidden');
-        //     }
-        //     $('.page-header').css({'overflow-y': 'visible'});
-        //     $('#pages').show();
-        // },
         buttons: [
             "close"
         ],
         image : {
             protect : true,
         },
-        // caption : function( instance, item ) {
-        //     var caption = $(this).data('caption') || '';
-        //     return ( caption.length ? caption : '' ) + '<span data-fancybox-index></span> из <span data-fancybox-count></span>';
-        // },
     });
 
+    //POPUP-INLINE
+    $(".js-popup-inline").fancybox({
+        speed : 330,
+        transitionEffect: "slide", 
+        animationEffect: "zoom-in-out", 
+        infobar: false,
+        buttons: [
+            "close"
+        ],
+    });
+    $("body").on("click", ".js-popup-close", function(e){
+        e.preventDefault();
+        parent.jQuery.fancybox.getInstance().close();
+    });
+
+    //ACCORDEON
+    $("body").on("click", ".accordeon__link", function(e){
+        e.preventDefault();
+        $(this).parents('.accordeon__item').toggleClass('active');
+        $(this).next('.accordeon__info').slideToggle();
+    });
+
+
+    //FOOTER-MAP
+    $("body").on("click", ".js-map-toggle", function(e){
+        e.preventDefault();
+        var tab_id = $(this).attr('data-tab');
+
+        $('.bottom-feedback-map__link').removeClass('active');
+        $('.toggle-map').removeClass('visible');
+
+        $(this).addClass('active');
+        $("#"+tab_id).addClass('visible');
+        mapOffice.container.fitToViewport();
+        mapStock.container.fitToViewport();
+    });
 });
 
 
@@ -92,6 +111,54 @@ $(window).resize(function () {
 // });
 
 // functions
+var mapOffice,
+    mapStock;
+
+function initializeMapOffice() {
+    if ($('#map-office').length>0) {
+        mapOffice = new ymaps.Map("map-office", {
+            center:[53.899888,27.566757],
+            zoom: 13,
+            controls: []
+        }, {
+            suppressMapOpenBlock: true
+        });     
+        var myPlacemark = new ymaps.Placemark([53.899888,27.566757],{
+                // balloonContentBody: 'Адрес',
+            },{
+            iconLayout: 'default#image',
+            iconImageHref: "img/svg/label.svg", 
+            iconImageSize: [52,60],
+            iconImageOffset: [-26, -60]
+        }); 
+        mapOffice.controls.add(new ymaps.control.ZoomControl({options: { position: { right: 20, top: 50 }}}));
+        mapOffice.behaviors.disable('scrollZoom');
+        mapOffice.geoObjects.add(myPlacemark);
+    }
+}
+
+function initializeMapStock() {
+    if ($('#map-stock').length>0) {
+        mapStock = new ymaps.Map("map-stock", {
+            center:[52.899888,26.566757],
+            zoom: 13,
+            controls: []
+        }, {
+            suppressMapOpenBlock: true
+        });      
+        var myPlacemark2 = new ymaps.Placemark([52.899888,26.566757],{
+                // balloonContentBody: 'Адрес',
+            },{
+            iconLayout: 'default#image',
+            iconImageHref: "img/svg/label.svg", 
+            iconImageSize: [52,60],
+            iconImageOffset: [-26, -60]
+        }); 
+        mapStock.controls.add(new ymaps.control.ZoomControl({options: { position: { right: 20, top: 50 }}}));
+        mapStock.behaviors.disable('scrollZoom');
+        mapStock.geoObjects.add(myPlacemark2);
+    }
+}
 
 function setFullWidth(){
 	if ($('.container-fullwidth__img').length>0) {

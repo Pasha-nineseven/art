@@ -12,10 +12,12 @@ var gulp = 			require('gulp');
     autoprefixer =  require('gulp-autoprefixer');
     fileinclude =   require('gulp-file-include');
 	watch = 		require('gulp-watch');
+    wait =          require('gulp-wait');
 
 
 gulp.task('sass', function(){
 	return gulp.src('app/scss/*.scss')
+    .pipe(wait(500))
 	.pipe(sass())
     .pipe(autoprefixer(['last 15 versions']))
 	.pipe(gulp.dest('app/css'))
@@ -33,6 +35,8 @@ gulp.task('scripts', function(){
         'app/libs/slick/slick.min.js',
         'app/libs/formstyler/jquery.formstyler.min.js',
         'app/libs/tooltip/tooltipster.bundle.min.js',
+        'app/libs/respTabs/jquery.responsiveTabs.js',
+        'app/libs/malihu/jquery.mCustomScrollbar.js',
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
@@ -69,7 +73,7 @@ gulp.task('browser-sync', function() {
 
 
 gulp.task('watch', ['browser-sync','css-libs', 'scripts',], function() {
-    gulp.watch(['app/scss/*.scss' , 'app/scss/components/*.scss'], ['sass']); // Наблюдение за sass файлами
+    gulp.watch(['app/scss/*.scss' , 'app/scss/components/*.scss' , 'app/scss/components/pages/*.scss'], ['sass']); // Наблюдение за sass файлами
     // Наблюдение за другими типами файлов
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);

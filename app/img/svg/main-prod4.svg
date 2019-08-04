@@ -1,0 +1,50 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="15" height="30" stroke="black"/>
+<rect x="17.5" y="19.5" width="15" height="30" stroke="black"/>
+<rect x="0.5" y="32.5" width="15" height="17" stroke="black"/>
+<rect x="34.5" y="0.5" width="15" height="30" stroke="black"/>
+<rect x="34.5" y="32.5" width="15" height="17" stroke="black"/>
+<rect x="17.5" y="0.5" width="15" height="17" stroke="black"/>
+<path d="M44.5 2L46.5 4" stroke="black"/>
+<path d="M43 7L41 9" stroke="black"/>
+<path d="M38 2L40 4" stroke="black"/>
+<path d="M44.5 12L46.5 14" stroke="black"/>
+<path d="M43 17L41 19" stroke="black"/>
+<path d="M38 12L40 14" stroke="black"/>
+<path d="M44.5 22L46.5 24" stroke="black"/>
+<path d="M43 27L41 29" stroke="black"/>
+<path d="M38 22L40 24" stroke="black"/>
+<path d="M27.5 21L29.5 23" stroke="black"/>
+<path d="M26 26L24 28" stroke="black"/>
+<path d="M21 21L23 23" stroke="black"/>
+<path d="M27.5 31L29.5 33" stroke="black"/>
+<path d="M26 36L24 38" stroke="black"/>
+<path d="M21 31L23 33" stroke="black"/>
+<path d="M27.5 41L29.5 43" stroke="black"/>
+<path d="M26 46L24 48" stroke="black"/>
+<path d="M21 41L23 43" stroke="black"/>
+<path d="M10.5 2L12.5 4" stroke="black"/>
+<path d="M9 7L7 9" stroke="black"/>
+<path d="M4 2L6 4" stroke="black"/>
+<path d="M10.5 12L12.5 14" stroke="black"/>
+<path d="M9 17L7 19" stroke="black"/>
+<path d="M4 12L6 14" stroke="black"/>
+<path d="M27.5 3L29.5 5" stroke="black"/>
+<path d="M26 8L24 10" stroke="black"/>
+<path d="M21 3L23 5" stroke="black"/>
+<path d="M27.5 13L29.5 15" stroke="black"/>
+<path d="M21 13L23 15" stroke="black"/>
+<path d="M10.5 35L12.5 37" stroke="black"/>
+<path d="M9 40L7 42" stroke="black"/>
+<path d="M4 35L6 37" stroke="black"/>
+<path d="M10.5 45L12.5 47" stroke="black"/>
+<path d="M4 45L6 47" stroke="black"/>
+<path d="M44.5 35L46.5 37" stroke="black"/>
+<path d="M43 40L41 42" stroke="black"/>
+<path d="M38 35L40 37" stroke="black"/>
+<path d="M44.5 45L46.5 47" stroke="black"/>
+<path d="M38 45L40 47" stroke="black"/>
+<path d="M10.5 22L12.5 24" stroke="black"/>
+<path d="M9 27L7 29" stroke="black"/>
+<path d="M4 22L6 24" stroke="black"/>
+</svg>
