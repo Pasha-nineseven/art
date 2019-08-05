@@ -30,6 +30,9 @@ ymaps[class$="-copyright"] {
 	display: none;
 }
 
+.hidden{
+	overflow-y: scroll; position: fixed; width: 100%; left: 0px; top: 0px;
+}
 .dnone{
 	display: none;
 }

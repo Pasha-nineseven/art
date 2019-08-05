@@ -76,7 +76,26 @@
 	.container-fullwidth {
 	    height: 455px;
 	}
-	.bottom {
-	    padding: 17px 0;
+	.top-menu{
+		display: none;
+	}
+	.top-menu-mobile{
+		display: block;
+	}
+	.top-catalog{
+		order: 1;
+	}
+	.top-search{
+		order: 3;
+		border-right: 0;
+	}
+	.top-search__submit {
+	    right: 0;
+	}
+	.top-search__input{
+		padding: 8px 25px 10px 22px;
+	}
+	.page-header-links{
+		display: none;
 	}
 }

@@ -659,3 +659,144 @@
 		}
 	}
 }
+
+.top-menu-mobile{
+	display: none;
+	order: 2;
+}
+.top-menu-mobile__toggle{
+	display: inline-block;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 12px;
+    padding: 24px 23px 24px 50px;
+    border-right: 1px solid #D9D9D9;
+    font-weight: 700;
+    border-bottom: 1px solid transparent;
+    span{
+    	position: relative;
+    	&:before{
+    		content: "";
+    		display: inline-block;
+    		width: 15px;
+    		height: 15px;
+    		background: url(../img/svg/info.svg) no-repeat;
+    		position: absolute;
+    		left: -23px;
+    		top: 50%;
+    		transform:translateY(-50%);
+    	}
+    }
+}
+
+.menu-mobile-list{
+	background: #fff;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    z-index: 4;
+    height: calc(100vh - 120px);
+    display: none;
+}
+.menu-mobile__close{
+	padding: 20px;
+}
+.close-link{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/svg/close-link.svg) no-repeat; 
+}
+.menu-mobile-list__item{
+	border-top: 1px solid #E2E2E2;
+	padding: 13px 20px;
+	position: relative;
+	&:last-child{
+		border-bottom: 1px solid #E2E2E2;
+	}
+}
+
+.menu-mobile-list__link{
+	display: inline-block;
+	text-transform: uppercase;
+	color: #000;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+
+.menu-mobile-hidden{
+	max-height: calc(100vh - 198px);
+    overflow-y: auto;
+    padding-bottom: 50px;
+}
+
+.menu-mobile-hidden::-webkit-scrollbar {
+    height: 8px;
+    width: 5px;
+}
+ 
+.menu-mobile-hidden::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 5px;
+}
+ 
+.menu-mobile-hidden::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #5A5A5A;
+}
+.menu-mobile__add{
+	padding: 20px 20px 0;
+	a{
+		display: block;
+		font-size: 13px;
+		margin-bottom: 20px;
+		color: #000;
+		text-decoration: none;
+		&:after{
+			display: none;
+		}
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+
+
+.menu-mobile-list__submenu{
+	    margin: 0 -20px;
+    padding: 20px 20px 10px 40px;
+    border-top: 1px solid #000;
+    margin-top: 20px;
+    display: none;
+	a{
+		display: block;
+		font-size: 13px;
+		margin-bottom: 20px;
+		color: #000;
+		text-decoration: none;
+		&:after{
+			display: none;
+		}
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+
+
+.mobile-submenu-toggle{
+	display: inline-block;
+    width: 20px;
+    height: 15px;
+    background: url(../img/svg/faq_select_arrow.svg) center no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    transition:transform 0.3s ease;
+    &.active{
+    	transform: rotate(180deg);
+    }
+}

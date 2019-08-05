@@ -24,6 +24,23 @@ $(document).ready(function() {
         }
     });
 
+
+    //MENU-MOBILE
+    $("body").on("click", ".js-top-menu-mobile__toggle", function(){
+        $('.menu-mobile-list').slideDown(100);
+        $('html').addClass('hidden');
+    });
+    $("body").on("click", ".js-close-link", function(){
+        $(this).parents('.menu-mobile-list').slideUp(100);
+        $('html').removeClass('hidden');
+    });
+    //MOBILE-SUBMENU
+    $("body").on("click", ".js-mobile-submenu-toggle", function(){
+        $(this).parents('.menu-mobile-list__item').find('.menu-mobile-list__submenu').slideToggle(100);
+        $(this).toggleClass('active');
+    });
+
+
 	setFullWidth();
     ymaps.ready(initializeMapOffice);
     ymaps.ready(initializeMapStock);
