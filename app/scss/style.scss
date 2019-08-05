@@ -79,6 +79,10 @@ ymaps[class$="-copyright"] {
 			max-width: 1360px;
 		}
 	}
+	.breadcrumbs .container-fluid,
+	.page-title .container-fluid{
+		max-width: 1360px;
+	}
 }
 
 // .layout--index{
@@ -1032,6 +1036,10 @@ a.breadcrumbs__item{
 
 
 @import "components/pages/index";
+
+@import "components/pages/news";
+
+@import "components/pages/reviews";
 
 
 

@@ -715,6 +715,9 @@
 	&:last-child{
 		border-bottom: 1px solid #E2E2E2;
 	}
+	&.active{
+		background: #F9F9F9;
+	}
 }
 
 .menu-mobile-list__link{
@@ -765,11 +768,12 @@
 
 
 .menu-mobile-list__submenu{
-	    margin: 0 -20px;
-    padding: 20px 20px 10px 40px;
+	    margin: 0 -20px -13px -20px;
+    padding: 20px 20px 20px 40px;
     border-top: 1px solid #000;
     margin-top: 20px;
     display: none;
+    background: #fff;
 	a{
 		display: block;
 		font-size: 13px;
