@@ -1,8 +1,28 @@
 $(document).ready(function() {
 	flexibility(document.documentElement);
-	// $("body").on("click", ".test", function(e){
-	// 	e.preventDefault();
-	// })
+    //SUBMENU
+	$("body").on("click", ".top-menu__item--sub", function(){
+		$(this).addClass('active');
+	});
+    $(document).click(function (e){ 
+        var div = $(".top-menu__item--sub");
+        if (!div.is(e.target)
+            && div.has(e.target).length === 0) {
+            $(".top-menu__item--sub").removeClass('active');
+        }
+    });
+
+    //PHONE-TOGGLE
+    $("body").on("click", ".js-phone-link", function(){
+        $(this).next('.phone-list').toggleClass('active');
+    });
+    $(document).click(function (e){ 
+        var div = $(".page-header-contacts__item--phone");
+        if (!div.is(e.target)
+            && div.has(e.target).length === 0) {
+            $(".phone-list").removeClass('active');
+        }
+    });
 
 	setFullWidth();
     ymaps.ready(initializeMapOffice);
