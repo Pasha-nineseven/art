@@ -2,7 +2,7 @@ $(document).ready(function() {
 	flexibility(document.documentElement);
     //SUBMENU
 	$("body").on("click", ".top-menu__item--sub", function(){
-		$(this).addClass('active');
+		$(this).toggleClass('active');
 	});
     $(document).click(function (e){ 
         var div = $(".top-menu__item--sub");
