@@ -1,10 +1,11 @@
 $(document).ready(function() {
-	// $('.js-truncate').jTruncate({
-	//     length: 185,
-	//     minTrail: 0,
-	//     moreText: "Читать дальше",
-	//     lessText: "Скрыть",
-	//     moreAni: "fast",
-	//     lessAni: 10
-	// });
+	$("body").on("click", ".js-read-more", function(e){
+		e.preventDefault();
+		$(this).parents('.reviews__item').find('.reviews-more').addClass('active');
+	});
+
+	$("body").on("click", ".js-reviews-more__close", function(e){
+		e.preventDefault();
+		$(this).parents('.reviews__item').find('.reviews-more').removeClass('active');
+	});
 });
