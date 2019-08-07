@@ -24,6 +24,20 @@ $(document).ready(function() {
         }
     });
 
+    //CATALOG
+    $("body").on("click", ".js-top-catalog__toggle", function(){
+        $(this).toggleClass('active');
+        $(this).next('.top-catalog__menu').slideToggle(250);
+    });
+    $(document).click(function (e){ 
+        var div = $(".top-catalog");
+        if (!div.is(e.target)
+            && div.has(e.target).length === 0) {
+            $(".top-catalog__menu").slideUp(250);
+            $(".js-top-catalog__toggle").removeClass('active');
+        }
+    });
+
 
     //MENU-MOBILE
     $("body").on("click", ".js-top-menu-mobile__toggle", function(){
@@ -215,16 +229,23 @@ function setFullWidth(){
 
 
 // links pages
-// $('body').append(
-// 	'<div style="position: fixed; z-index: 1005; bottom: 0; right: 0; background: #fff; border: solid 1px #828286; width: 200px;"> \
-// 		<a href="javascript:void(0);" style="float: right;background:#ccc; color:#000; padding: 5px 10px; text-decoration: none; font-size: 16px" onclick="$(this).parent().hide()">Close X</a> \
-// 	<style> \
-// 		#pages { padding: 10px 20px 0 50px; font-size: 18px; } \
-// 		#pages a { text-decoration: none; } \
-// 		#pages li { margin: 5px 0; } \
-// 	</style> \
-// 	<ol id="pages"> \
-// 		<li><a href="about.html">About</a></li> \
-// 		<li><a href="index.html">Index</a></li> \
-// 	</ol> \
-// </div>');
+$('body').append(
+	'<div style="position: fixed; z-index: 1005; bottom: 0; right: 0; background: #fff; border: solid 1px #828286; width: 200px;"> \
+		<a href="javascript:void(0);" style="float: right;background:#ccc; color:#000; padding: 5px 10px; text-decoration: none; font-size: 16px" onclick="$(this).parent().hide()">Close X</a> \
+	<style> \
+		#pages { padding: 10px 20px 0 50px; font-size: 18px; } \
+		#pages a { text-decoration: none; } \
+		#pages li { margin: 5px 0; } \
+	</style> \
+	<ol id="pages"> \
+		<li><a href="text.html">Text</a></li> \
+		<li><a href="index.html">Index</a></li> \
+        <li><a href="news.html">News</a></li> \
+        <li><a href="reviews.html">Reviews</a></li> \
+        <li><a href="brands.html">Brands</a></li> \
+        <li><a href="brands-in.html">Brands-in</a></li> \
+        <li><a href="downloads.html">Downloads</a></li> \
+        <li><a href="downloads-in.html">Downloads-in</a></li> \
+        <li><a href="downloads2.html">Downloads2</a></li> \
+	</ol> \
+</div>');
