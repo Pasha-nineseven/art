@@ -33,7 +33,7 @@
 								<a href="#" class="page-header-links__item"><span>Розничные магазины партнеров</span></a>
 							</div>
 							<div class="page-header-contacts">
-								<a href="mailto:test@gmail.com" class="page-header-contacts__item page-header-contacts__item--mail">
+								<a href="#feedback" class="page-header-contacts__item page-header-contacts__item--mail js-popup-inline" data-fancybox>
 									<span>Написать нам</span>
 								</a>
 								<div class="page-header-contacts__item page-header-contacts__item--phone">
@@ -431,7 +431,7 @@
 						Ваши заказы ведет индивидуальный менеджер, который отследит каждую Вашу отгрузку в режиме реального времени и решит любые возникшие вопросы.
 					</div>
 					<div class="row">
-						<div class="col-lg-6">
+						<div class="col-sm-6">
 							<div class="img-item">
 								<img src="img/content/bg2.jpg" alt="">
 							</div>
@@ -439,7 +439,7 @@
 								Оперативная работа с рекламациями.
 							</div>
 						</div>
-						<div class="col-lg-6">
+						<div class="col-sm-6">
 							<div class="img-item">
 								<img src="img/content/bg3.jpg" alt="">
 							</div>
@@ -449,7 +449,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-lg-4">
+						<div class="col-sm-4">
 							<div class="img-item">
 								<img src="img/content/bg4.jpg" alt="">
 							</div>
@@ -457,7 +457,7 @@
 								Мы на рынке 15 лет
 							</div>
 						</div>
-						<div class="col-lg-4">
+						<div class="col-sm-4">
 							<div class="img-item">
 								<img src="img/content/bg5.jpg" alt="">
 							</div>
@@ -465,7 +465,7 @@
 								Имеем контракты с более чем 25 заводами-производителями
 							</div>
 						</div>
-						<div class="col-lg-4">
+						<div class="col-sm-4">
 							<div class="img-item">
 								<img src="img/content/bg6.jpg" alt="">
 							</div>
@@ -523,7 +523,7 @@
 						<img src="img/content/fw.jpg" alt="">
 					</div>
 					<div class="row txt-item">
-						<div class="col-md-6">
+						<div class="col-sm-6">
 							<p>
 								Компания «АртКерамика» – крупнейший поставщик керамической плитки, керамического гранита и сантехники в Беларуси, один из лидеров в сегменте. Более 10 лет нами успешно осуществляется продажа керамогранита, керамической плитки, сантехники и мебели для ванной комнаты.
 							</p>
@@ -531,7 +531,7 @@
 								«АртКерамика» - это официальный представитель 10 брендов сантехники, ванн и мебели для ванных комнат: Kolo (Коло), Avanta (Аванта), Cersanit (Церсанит), Gustavsberg (Гюставсберг), Керамин, Аквародос, Ванланд, WhiteWave и др.
 							</p>
 						</div>
-						<div class="col-md-6">
+						<div class="col-sm-6">
 							<p>
 								«АРТКЕРАМИКА» - это официальный представитель более 25 известных брендов керамической плитки и керамогранита России, Польши, Украины и Беларуси: Kerama Marazzi (Керама Марацци), Уральский гранит, Inter Cerama (Интер Керама), Cersanit (Церсанит), Opoczno (Опочно), Paradyz (Парадиж), Italon (Италон), Coliseum Gres (Колизеум Грес), УралКерамика, Cerrad и др. (везде сделать ссылки на конкретные бренды) 
 							</p>
@@ -572,21 +572,21 @@
 					<div class="page-form">
 						<form action="#" method="post">
 							<div class="row">
-								<div class="col-md-6">
+								<div class="col-sm-6">
 									<div class="input-wrap">
 										<div class="input-wrap__item">
 											<input type="text" placeholder="Ваше имя">
 										</div>
 									</div>
 								</div>
-								<div class="col-md-6">
+								<div class="col-sm-6">
 									<div class="input-wrap">
 										<div class="input-wrap__item">
 											<input type="text" placeholder="E-mail">
 										</div>
 									</div>
 								</div>
-								<div class="col-md-6">
+								<div class="col-sm-6">
 									<div class="input-wrap input-wrap--error">
 										<div class="input-wrap__item">
 											<input type="text" placeholder="Электронная почта" value="bla-bla-bla@gmail.com">
@@ -624,12 +624,12 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-md-6">
+								<div class="col-sm-6">
 									<div class="input-wrap input-wrap--calendar">
 										<input type="text" placeholder="Выберите дату" class="input-calendar">
 									</div>
 								</div>
-								<div class="col-md-6">
+								<div class="col-sm-6">
 									<div class="input-wrap">
 										<select class="fs">
 											<option value="Москва и область">Минск, Минская область</option>
@@ -647,6 +647,19 @@
 
 
 					<a href="#thanks" class="btn js-popup-inline" data-fancybox>Попап об успешной отправке</a>
+					<br><br>
+					<div class="drop_zone-wrapper">
+						<form action="#" method="post">
+							<div id="drop_zone_content" class="drop_zone">
+								Перетащите файл в область или <div class="drop-container">
+									<input type="file" id="files" name="files[]" value="выберите с диска" />
+									<span>выберите с диска</span>
+								</div>
+							</div>
+							<output id="list_content" class="list_content"></output>
+						</form>
+					</div>
+
 					<br><br>
 
 					<div class="container-fullwidth">
@@ -744,9 +757,9 @@
 
 					<div class="resp-tabs">
 					    <ul>
-					        <li><a href="#tab-1">Таб 1</a></li>
-					        <li><a href="#tab-2">Таб 2</a></li>
-					        <li><a href="#tab-3">Таб 3</a></li>
+					        <li><a href="#tab-1">Офис</a></li>
+					        <li><a href="#tab-2">Склад</a></li>
+					        <li><a href="#tab-3">Test</a></li>
 					    </ul>
 					    <div id="tab-1">
 					    	«АРТКЕРАМИКА» - это официальный представитель более 25 известных брендов керамической плитки и керамогранита России, Польши, Украины и Беларуси: Kerama Marazzi (Керама Марацци), Уральский гранит, Inter Cerama (Интер Керама), Cersanit (Церсанит), Opoczno (Опочно), <span class="tooltip" title="Пример тултипа">Paradyz (Парадиж)</span>, Italon (Италон), Coliseum Gres (Колизеум Грес), УралКерамика, Cerrad и др.
@@ -1011,6 +1024,44 @@
 		<div id="map" class="dnone">
 			<div class="popup-map">
 				<img src="img/content/map.jpg" alt="">
+			</div>
+		</div>
+		<div id="feedback" class="popup-feedback-wrap dnone">
+			<div class="popup-feedback">
+				<h4>Обратная связь</h4>
+					<form action="#" method="post">
+					<div class="input-wrap input-wrap--necessary">
+						<input type="text" placeholder="Имя">
+					</div>
+					<div class="input-wrap input-wrap--necessary">
+						<input type="text" placeholder="Телефон +375 _ _ (_ _ ) _ _ _ - _ _ - _ _">
+					</div>
+					<div class="input-wrap input-wrap--necessary">
+						<input type="text" placeholder="Ваш e-mail">
+					</div>
+					<div class="input-wrap input-wrap--necessary">
+						<input type="text" placeholder="Сообщение">
+					</div>
+					<div class="drop_zone-wrapper">
+						<div id="mob_drop_zone_content" class="drop_zone">
+							Перетащите файл в область или <div class="drop-container">
+								<input type="file" id="mob_files" name="mob_files[]" value="выберите с диска" />
+								<span>выберите с диска</span>
+							</div>
+						</div>
+						<output id="mob_list_content" class="list_content"></output>
+					</div>
+					<div class="checkbox-item">
+						<input type="checkbox" id="agree1" name="agree">
+						<label for="agree1">
+							Я согласен с <a href="#">пользовательским соглашением</a>
+						</label>
+					</div>
+					<div class="captcha">
+						<img src="img/content/captcha.jpg" alt="">
+					</div>
+					<button type="submit" class="btn">Отправить</button>
+				</form>
 			</div>
 		</div>
 

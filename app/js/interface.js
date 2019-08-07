@@ -150,6 +150,26 @@ $(document).ready(function() {
         mapOffice.container.fitToViewport();
         mapStock.container.fitToViewport();
     });
+
+
+    //INPUT-FILE-CONTENT
+    if ('#drop_zone_content'.length>0) {
+        var dropZone = document.getElementById('drop_zone_content');
+   
+        dropZone.addEventListener('dragover', handleDragOver, false);
+        dropZone.addEventListener('drop', handleFileSelect, false);
+        
+        document.getElementById('files').addEventListener('change', handleFileSelect2, false);
+    }
+    //in-popup
+    if ('#mob_drop_zone_content'.length>0) {
+        var dropZone = document.getElementById('mob_drop_zone_content');
+   
+        dropZone.addEventListener('dragover', mob_handleDragOver, false);
+        dropZone.addEventListener('drop', mob_handleFileSelect, false);
+        
+        document.getElementById('mob_files').addEventListener('change', mob_handleFileSelect2, false);
+    }
 });
 
 
@@ -226,6 +246,73 @@ function setFullWidth(){
 		})
 	}
 }
+
+function handleFileSelect(evt) {
+    evt.stopPropagation();
+    evt.preventDefault();
+
+    var files = evt.dataTransfer.files; // FileList object.
+
+    // files is a FileList of File objects. List some properties.
+    var output = [];
+    for (var i = 0, f; f = files[i]; i++) {
+        output.push('<div><li><strong>', escape(f.name), '</strong> (', f.type, ') - ', '<i>'+f.size+' байт</i></li>');
+    }
+    document.getElementById('list_content').innerHTML = '<div class="list_content_msg">Файл загружен:</div><ul>' + output.join('') + '</ul>';
+}
+
+function handleDragOver(evt) {
+    evt.stopPropagation();
+    evt.preventDefault();
+    evt.dataTransfer.dropEffect = 'copy'; // Explicitly show this is a copy.
+}
+
+function handleFileSelect2(evt) {
+    var files = evt.target.files; // FileList object
+
+    // files is a FileList of File objects. List some properties.
+    var output = [];
+    for (var i = 0, f; f = files[i]; i++) {
+        output.push('<li><strong>', escape(f.name), '</strong> (', f.type, ') - ', '<i>'+f.size+' байт</i></li>');
+    }
+    document.getElementById('list_content').innerHTML = '<div class="list_content_msg">Файл загружен:</div><ul>' + output.join('') + '</ul>';
+}
+
+  
+
+function mob_handleFileSelect(evt) {
+    evt.stopPropagation();
+    evt.preventDefault();
+
+    var files = evt.dataTransfer.files; // FileList object.
+
+    // files is a FileList of File objects. List some properties.
+    var output = [];
+    for (var i = 0, f; f = files[i]; i++) {
+        output.push('<div><li><strong>', escape(f.name), '</strong> (', f.type, ') - ', '<i>'+f.size+' байт</i></li>');
+    }
+    document.getElementById('mob_list_content').innerHTML = '<div class="list_content_msg">Файл загружен:</div><ul>' + output.join('') + '</ul>';
+}
+
+function mob_handleDragOver(evt) {
+    evt.stopPropagation();
+    evt.preventDefault();
+    evt.dataTransfer.dropEffect = 'copy'; // Explicitly show this is a copy.
+}
+
+function mob_handleFileSelect2(evt) {
+    var files = evt.target.files; // FileList object
+
+    // files is a FileList of File objects. List some properties.
+    var output = [];
+    for (var i = 0, f; f = files[i]; i++) {
+        output.push('<li><strong>', escape(f.name), '</strong> (', f.type, ') - ', '<i>'+f.size+' байт</i></li>');
+    }
+    document.getElementById('mob_list_content').innerHTML = '<div class="list_content_msg">Файл загружен:</div><ul>' + output.join('') + '</ul>';
+}
+
+
+
 
 
 // links pages

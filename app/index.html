@@ -33,7 +33,7 @@
 								<a href="#" class="page-header-links__item"><span>Розничные магазины партнеров</span></a>
 							</div>
 							<div class="page-header-contacts">
-								<a href="mailto:test@gmail.com" class="page-header-contacts__item page-header-contacts__item--mail">
+								<a href="#feedback" class="page-header-contacts__item page-header-contacts__item--mail js-popup-inline" data-fancybox>
 									<span>Написать нам</span>
 								</a>
 								<div class="page-header-contacts__item page-header-contacts__item--phone">
@@ -915,6 +915,44 @@
 		<div id="map" class="dnone">
 			<div class="popup-map">
 				<img src="img/content/map.jpg" alt="">
+			</div>
+		</div>
+		<div id="feedback" class="popup-feedback-wrap dnone">
+			<div class="popup-feedback">
+				<h4>Обратная связь</h4>
+					<form action="#" method="post">
+					<div class="input-wrap input-wrap--necessary">
+						<input type="text" placeholder="Имя">
+					</div>
+					<div class="input-wrap input-wrap--necessary">
+						<input type="text" placeholder="Телефон +375 _ _ (_ _ ) _ _ _ - _ _ - _ _">
+					</div>
+					<div class="input-wrap input-wrap--necessary">
+						<input type="text" placeholder="Ваш e-mail">
+					</div>
+					<div class="input-wrap input-wrap--necessary">
+						<input type="text" placeholder="Сообщение">
+					</div>
+					<div class="drop_zone-wrapper">
+						<div id="mob_drop_zone_content" class="drop_zone">
+							Перетащите файл в область или <div class="drop-container">
+								<input type="file" id="mob_files" name="mob_files[]" value="выберите с диска" />
+								<span>выберите с диска</span>
+							</div>
+						</div>
+						<output id="mob_list_content" class="list_content"></output>
+					</div>
+					<div class="checkbox-item">
+						<input type="checkbox" id="agree1" name="agree">
+						<label for="agree1">
+							Я согласен с <a href="#">пользовательским соглашением</a>
+						</label>
+					</div>
+					<div class="captcha">
+						<img src="img/content/captcha.jpg" alt="">
+					</div>
+					<button type="submit" class="btn">Отправить</button>
+				</form>
 			</div>
 		</div>
 
