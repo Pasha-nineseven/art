@@ -31,10 +31,37 @@ $(document).ready(function() {
         }
     });
 
+
+    //MOBILE-SEARCH
+    $("body").on("click", ".js-top-search-mobile__toggle", function(){
+        $('.top-search-mobile__form').show();
+    });
+    $("body").on("click", ".js-top-search-mobile__close", function(){
+        $('.top-search-mobile__form').hide();
+    });
+
+
+
+    //MOBILE-CATALOG
+    $("body").on("click", ".js-top-catalog__close", function(){
+        $('.top-catalog__menu').hide();
+        $('html').removeClass('hidden');
+    });
+    $("body").on("click", ".js-top-catalog-sub__toggle", function(){
+        $(this).parents('.top-catalog__item').toggleClass('active');
+        $(this).next('.top-catalog-sub').slideToggle(150);
+    });
+
+
+
+
     //CATALOG
     $("body").on("click", ".js-top-catalog__toggle", function(){
         $(this).toggleClass('active');
         $(this).next('.top-catalog__menu').slideToggle(250);
+        var x = window.matchMedia("(max-width: 600px)");
+        ifMobileCheck(x);
+        x.addListener(ifMobileCheck);
     });
     $(document).click(function (e){ 
         var div = $(".top-catalog");
@@ -44,6 +71,13 @@ $(document).ready(function() {
             $(".js-top-catalog__toggle").removeClass('active');
         }
     });
+
+    function ifMobileCheck(x) {
+        if (x.matches) { // If media query matches
+            $('html').addClass('hidden');
+        }
+    }
+
 
 
     //MENU-MOBILE
@@ -321,7 +355,6 @@ function mob_handleFileSelect2(evt) {
     }
     document.getElementById('mob_list_content').innerHTML = '<div class="list_content_msg">Файл загружен:</div><ul>' + output.join('') + '</ul>';
 }
-
 
 
 
