@@ -46,6 +46,7 @@ $(document).ready(function() {
     $("body").on("click", ".js-top-catalog__close", function(){
         $('.top-catalog__menu').hide();
         $('html').removeClass('hidden');
+        $('.top-catalog__toggle').removeClass('active');
     });
     $("body").on("click", ".js-top-catalog-sub__toggle", function(){
         $(this).parents('.top-catalog__item').toggleClass('active');
