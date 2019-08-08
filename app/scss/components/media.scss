@@ -831,6 +831,10 @@
 	    float: none;
 	    margin: 0 0 20px 0;
 	}
+	.news__item{
+		padding: 20px;
+		height: 350px;
+	}
 }
 
 @media screen and (max-width: 576px){
@@ -889,5 +893,8 @@
 	}
 	.fancybox-slide--html .fancybox-close-small{
 		top: 0;
+	}
+	.news__title {
+	    font-size: 20px;
 	}
 }

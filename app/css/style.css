@@ -9039,7 +9039,10 @@ a.breadcrumbs__item {
     margin: 0 0 20px 0; }
   .img-item.img-item--right img {
     float: none;
-    margin: 0 0 20px 0; } }
+    margin: 0 0 20px 0; }
+  .news__item {
+    padding: 20px;
+    height: 350px; } }
 
 @media screen and (max-width: 576px) {
   .projects__item--sm-height .projects__name {
@@ -9084,4 +9087,6 @@ a.breadcrumbs__item {
   .fancybox-content {
     padding: 40px 15px 15px; }
   .fancybox-slide--html .fancybox-close-small {
-    top: 0; } }
+    top: 0; }
+  .news__title {
+    font-size: 20px; } }
