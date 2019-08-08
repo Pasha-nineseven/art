@@ -12,6 +12,13 @@ $(document).ready(function() {
         }
     });
 
+
+    //SUBMENU
+    $("body").on("click", ".js-mobile-filter-toggle", function(){
+        $(this).next('.mobile-filter-toggle__list').slideToggle();
+    });
+   
+
     //PHONE-TOGGLE
     $("body").on("click", ".js-phone-link", function(){
         $(this).next('.phone-list').toggleClass('active');
@@ -156,19 +163,23 @@ $(document).ready(function() {
     if ('#drop_zone_content'.length>0) {
         var dropZone = document.getElementById('drop_zone_content');
    
-        dropZone.addEventListener('dragover', handleDragOver, false);
-        dropZone.addEventListener('drop', handleFileSelect, false);
-        
-        document.getElementById('files').addEventListener('change', handleFileSelect2, false);
+        if (dropZone) {
+            dropZone.addEventListener('dragover', handleDragOver, false);
+            dropZone.addEventListener('drop', handleFileSelect, false);
+            
+            document.getElementById('files').addEventListener('change', handleFileSelect2, false);
+        }
     }
     //in-popup
     if ('#mob_drop_zone_content'.length>0) {
         var dropZone = document.getElementById('mob_drop_zone_content');
    
-        dropZone.addEventListener('dragover', mob_handleDragOver, false);
-        dropZone.addEventListener('drop', mob_handleFileSelect, false);
-        
-        document.getElementById('mob_files').addEventListener('change', mob_handleFileSelect2, false);
+        if (dropZone) {
+            dropZone.addEventListener('dragover', mob_handleDragOver, false);
+            dropZone.addEventListener('drop', mob_handleFileSelect, false);
+            
+            document.getElementById('mob_files').addEventListener('change', mob_handleFileSelect2, false);
+        }
     }
 });
 
@@ -334,5 +345,6 @@ $('body').append(
         <li><a href="downloads.html">Downloads</a></li> \
         <li><a href="downloads-in.html">Downloads-in</a></li> \
         <li><a href="downloads2.html">Downloads2</a></li> \
+        <li><a href="projects.html">Projects</a></li> \
 	</ol> \
 </div>');
