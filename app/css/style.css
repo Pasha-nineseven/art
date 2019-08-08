@@ -5381,31 +5381,36 @@ a.breadcrumbs__item {
     margin-bottom: 15px;
     font-family: 'playfair_displayregular';
     font-weight: normal;
-    font-size: 36px; }
+    font-size: 36px;
+    line-height: 1.2; }
   .fancybox-content h2 {
     margin: 0;
     margin-bottom: 15px;
     font-family: 'playfair_displayregular';
     font-weight: normal;
-    font-size: 34px; }
+    font-size: 34px;
+    line-height: 1.2; }
   .fancybox-content h3 {
     margin: 0;
     margin-bottom: 15px;
     font-family: 'playfair_displayregular';
     font-weight: normal;
-    font-size: 32px; }
+    font-size: 32px;
+    line-height: 1.2; }
   .fancybox-content h4 {
     margin: 0;
     margin-bottom: 15px;
     font-family: 'playfair_displayregular';
     font-weight: normal;
-    font-size: 30px; }
+    font-size: 30px;
+    line-height: 1.2; }
   .fancybox-content h5 {
     margin: 0;
     margin-bottom: 20px;
     font-family: 'playfair_displayregular';
     font-weight: normal;
-    font-size: 28px; }
+    font-size: 28px;
+    line-height: 1.2; }
 
 .fancybox-slide--html .fancybox-close-small {
   padding: 5px;
@@ -8748,15 +8753,20 @@ a.breadcrumbs__item {
             align-items: center; }
   .workarea {
     line-height: 1.3; }
-  .workarea h1 {
+  .workarea h1,
+  .fancybox-content h1 {
     font-size: 30px; }
-  .workarea h2 {
+  .workarea h2,
+  .fancybox-content h2 {
     font-size: 28px; }
-  .workarea h3 {
+  .workarea h3,
+  .fancybox-content h3 {
     font-size: 25px; }
-  .workarea h4 {
+  .workarea h4,
+  .fancybox-content h4 {
     font-size: 22px; }
-  .workarea h5 {
+  .workarea h5,
+  .fancybox-content h5 {
     font-size: 20px; }
   .workarea ol li {
     padding-left: 20px; }
@@ -9023,7 +9033,13 @@ a.breadcrumbs__item {
   .index-info-news__inner {
     padding: 20px; }
   .index-partners {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .img-item.img-item--left img {
+    float: none;
+    margin: 0 0 20px 0; }
+  .img-item.img-item--right img {
+    float: none;
+    margin: 0 0 20px 0; } }
 
 @media screen and (max-width: 576px) {
   .projects__item--sm-height .projects__name {
