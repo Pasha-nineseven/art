@@ -56,6 +56,30 @@
 	.page-header-links{
 	    margin-right: 40px;
 	}
+	.projects__item--sm-height .projects__info,
+	.projects__item--lg-height .projects__info{
+	    padding: 20px;
+	}
+	.projects__name {
+	    font-size: 20px;
+	}
+	.benefits__txt {
+	    font-size: 16px;
+	    max-width: 100%;
+	}
+	.benefits__icon{
+		margin-bottom: 30px;
+	}
+	.index-info-news{
+		padding-right: 0;
+		padding-left: 60px;
+	}
+	.benefits {
+	    padding-top: 0;
+	}
+	.main-products__slider{
+		margin-bottom: 30px;
+	}
 }
 
 @media screen and (max-width: 1100px){
@@ -67,6 +91,25 @@
 	}
 	.bottom-menu__item {
 	    width: 33.33%;
+	}
+	.projects__item--lg-height .projects__img {
+	    height: 450px;
+	}
+	.projects__item--sm-height .projects__img {
+	    height: 205px;
+	}
+	.pagingInfo{
+		left: 250px;
+	}
+	.main-slider__inner {
+	    max-width: 100%;
+	    padding: 60px 20px;
+	}
+	.main-slider__title{
+		margin-bottom: 20px;
+	}
+	.main-slider__add{
+		margin-bottom: 30px;
 	}
 }
 
