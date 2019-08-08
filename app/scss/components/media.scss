@@ -111,6 +111,12 @@
 	.main-slider__add{
 		margin-bottom: 30px;
 	}
+	.benefits__item {
+	    padding-right: 20px;
+	}
+	.benefits__wrap{
+		margin-right: -20px;
+	}
 }
 
 @media screen and (max-width: 1023px){
@@ -166,6 +172,23 @@
 	.top-catalog__menu{
 		padding: 20px 0;
 	}
+	.projects__item--sm-height{
+		.projects__name{
+			font-size: 16px;
+		}
+	}
+	.benefits__txt {
+	    font-size: 13px;
+	}
+	.index-info-news__title {
+	    font-size: 20px;
+	}
+	.projects__item--lg-height .projects__img {
+	    height: 410px;
+	}
+	.projects__item--sm-height .projects__img {
+	    height: 185px;
+	}
 }
 
 @media screen and (max-width: 850px){
@@ -175,6 +198,37 @@
 	.bottom-menu-gen {
 	    width: 100%;
 	    margin-left: -20px;
+	}
+	.index-info__wrap{
+		flex-wrap:wrap;
+	}
+	.index-info-articles {
+	    padding-right: 0;
+	    width: 100%;
+	    margin-bottom: 20px;
+	}
+	.index-info-news {
+	    padding-right: 0;
+	    padding-left: 0;
+	    width: 100%;
+	    margin-bottom: 0;
+	}
+	.index-info-news__inner {
+	    margin-left: 0;
+	}
+	.index-info-news .index-info__top {
+	    max-width: 100%;
+	    align-items:center;
+	}
+	.all-info{
+		margin-bottom: 0;
+	}
+	.index-info-articles__img{
+		height: 380px;
+	}
+	.index-info__top{
+		max-width: 100%;
+	    align-items:center;
 	}
 }
 
@@ -332,6 +386,35 @@
 		position: absolute;
 		bottom: 15px;
 		right: 0;
+	}
+	.main-prev,
+	.main-next,
+	.main-slider-preview__img {
+	    width: 130px;
+	    height: 100px;
+	}
+	.main-slider-arrows{
+		bottom: 130px;
+	}
+	.pagingInfo {
+	    left: 160px;
+	    bottom: 85px;
+	}
+	.main-slider__item {
+	    height: 480px;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.benefits__wrap{
+		flex-wrap:wrap;
+	}
+	.benefits__item{
+		width: 50%;
+		margin-bottom: 20px;
+	}
+	.benefits{
+		margin-bottom: 40px;
 	}
 }
 
@@ -692,5 +775,15 @@
 	}
 	.top-catalog__txt {
 	    font-weight: 700;
+	}
+}
+
+@media screen and (max-width: 576px){
+	.projects__item--sm-height .projects__name {
+	    font-size: 20px;
+	}
+	.projects__item--lg-height .projects__img,
+	.projects__item--sm-height .projects__img{
+	    height: 240px;
 	}
 }
