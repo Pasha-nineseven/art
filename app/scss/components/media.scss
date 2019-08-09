@@ -80,6 +80,20 @@
 	.main-products__slider{
 		margin-bottom: 30px;
 	}
+	.reviews__inner{
+		padding: 20px;
+	}
+	.reviews-more{
+		padding: 16px;
+	}
+	.reviews__img{
+		margin-right: 20px;
+	}
+	.reviews__txt,
+	.reviews__person,
+	.read-more{
+	    font-size: 14px;
+	}
 }
 
 @media screen and (max-width: 1100px){
@@ -116,6 +130,12 @@
 	}
 	.benefits__wrap{
 		margin-right: -20px;
+	}
+	.reviews{
+		margin-right: -20px;
+	}
+	.reviews__item{
+		padding-right: 20px;
 	}
 }
 
@@ -229,6 +249,11 @@
 	.index-info__top{
 		max-width: 100%;
 	    align-items:center;
+	}
+	.reviews__img {
+	    min-width: 90px;
+	    width: 90px;
+	    height: 90px;
 	}
 }
 
@@ -402,6 +427,13 @@
 	}
 	.main-slider__item {
 	    height: 480px;
+	}
+	.reviews {
+	    margin-right: 0;
+	}
+	.reviews__item {
+	    padding-right:0;
+	    width: 100%;
 	}
 }
 
@@ -896,5 +928,13 @@
 	}
 	.news__title {
 	    font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.reviews__img {
+	    min-width: 60px;
+	    width: 60px;
+	    height: 60px;
 	}
 }
