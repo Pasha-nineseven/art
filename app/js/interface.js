@@ -14,7 +14,8 @@ $(document).ready(function() {
 
 
     //SUBMENU
-    $("body").on("click", ".js-mobile-filter-toggle", function(){
+    $("body").on("click", ".js-mobile-filter-toggle", function(e){
+         e.preventDefault();
         $(this).next('.mobile-filter-toggle__list').slideToggle();
     });
    
