@@ -104,6 +104,25 @@
 	.brands__item {
 	    width: 20%;
 	}
+	.aside-categories__link {
+	    padding: 10px 15px;
+	}
+	.aside-categories__top{
+		padding: 0 15px;
+	    line-height: 1.2;
+	}
+	.page-aside {
+	    width: 300px;
+	    padding-right: 25px;
+	}
+	.page-projects__list{
+		.projects__item--sm-height .projects__img {
+		    height: 220px;
+		}
+		.projects__item--lg-height .projects__img {
+		    height: 480px;
+		}
+	}
 }
 
 @media screen and (max-width: 1100px){
@@ -234,6 +253,28 @@
 	}
 	.brands__item {
 	    width: 25%;
+	}
+	.page-projects__list .projects__item--lg-height .projects__img {
+	    height: 360px;
+	}
+	.page-projects__list .projects__item--sm-height .projects__img {
+	    height: 160px;
+	}
+	.aside-categories__txt {
+	    font-size: 12px;
+	}
+}
+
+
+@media screen and (max-width: 950px){
+	.page-projects {
+	    padding-top: 0;
+	    flex-wrap: wrap;
+	}
+	.page-aside {
+	    width: 100%;
+	    padding-right: 0;
+	    margin-bottom: 20px;
 	}
 }
 
@@ -928,6 +969,8 @@
 	}
 	.mobile-filter-toggle{
 		display: block;
+		width: 100%;
+		margin-bottom: 20px;
 	}
 	.alphabet-filter{
 		display: none;
@@ -960,6 +1003,22 @@
 		.download__txt{
 			max-width:70%;
 		}
+	}
+	.page-aside{
+		display: none;
+	}
+	.page-projects__list{
+		width: 100%;
+	}
+	.page-projects__list .projects__item--lg-height .projects__img {
+	    height: 300px;
+	}
+	.back-link {
+	    width: 13px;
+	    height: 30px;
+	    background: url(../img/svg/back.svg) center no-repeat;
+	    background-size: contain;
+	    margin-right: 25px;
 	}
 }
 
