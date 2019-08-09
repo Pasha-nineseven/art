@@ -45,6 +45,13 @@
 	.top-catalog__wrap{
 		margin-right: -15px;
 	}
+	.brands{
+		margin-right: -20px;
+	}
+	.brands__item{
+		padding-right: 20px;
+		margin-bottom: 20px;
+	}
 }
 
 
@@ -93,6 +100,9 @@
 	.reviews__person,
 	.read-more{
 	    font-size: 14px;
+	}
+	.brands__item {
+	    width: 20%;
 	}
 }
 
@@ -208,6 +218,15 @@
 	}
 	.projects__item--sm-height .projects__img {
 	    height: 185px;
+	}
+	.brands__item {
+	    width: 25%;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.brands__item {
+	    width: 33.333%;
 	}
 }
 
@@ -464,6 +483,9 @@
 		br{
 			display: none;
 		}
+	}
+	.brands__item {
+	    width: 50%;
 	}
 }
 
@@ -928,6 +950,9 @@
 	}
 	.news__title {
 	    font-size: 20px;
+	}
+	.brands__item {
+	    width: 100%;
 	}
 }
 
