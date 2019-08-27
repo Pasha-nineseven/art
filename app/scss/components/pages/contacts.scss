@@ -1,0 +1,126 @@
+.contacts{
+	.accordeon__item{
+		margin-bottom: 1px;
+	}
+	.accordeon__link{
+    	padding: 16px 30px 16px 0;
+		h4{
+			margin-bottom: 0;
+		}
+	}
+}
+
+.department__top{
+	font-size: 26px;
+	margin-bottom: 12px;
+	    line-height: 1.2;
+	        min-height: 4em;
+}
+.department__name{
+	font-size: 20px;
+}
+
+.department__pos{
+    font-size: 13px;
+    margin-bottom: 21px;
+    line-height: 1.2;
+}
+
+.department__phone{
+	color: #000;
+	display: inline-block;
+	padding-left: 25px;
+    position: relative;
+    &:before{
+		content: "";
+		display: inline-block;
+		width: 12px;
+		height: 12px;
+		position: absolute;
+		left: 2px;
+		top: 50%;
+		transform: translateY(-50%);
+		background: url(../img/svg/phone.svg) no-repeat;
+		margin-top: -1px;
+		transition: background 0.3s ease;
+    }
+	&:hover{
+		color: #929292;
+		&:before{
+			background: url(../img/svg/phone-h.svg) no-repeat;
+		}
+	}
+}
+
+.department__info{
+	//padding: 0 29px;
+}
+
+.department__contact{
+	font-size: 16px;
+	margin-bottom: 5px;
+	    display: flex;
+    align-items: center;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.department__mail{
+	color: #286DB6;
+	text-decoration: underline;
+	display: inline-block;
+	    padding-left: 25px;
+    position: relative;
+    &:before{
+		content: "";
+		display: inline-block;
+		width: 18px;
+		height: 12px;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		background: url(../img/svg/mail.svg) no-repeat;
+		margin-top: 1px;
+		transition: background 0.3s ease;
+    }
+	&:hover{
+		text-decoration: none;
+		&:before{
+			    background: url(../img/svg/mail-h.svg) no-repeat;
+		}
+	}
+}
+
+.department__photo{
+	margin: 0 0 -31px 31px;
+    //margin-bottom: -35px;
+    width: 95px;
+    //height: 106px;
+    img{
+    	display: block;
+    	max-width: 100%;
+    	height: auto;
+    	max-height: 100%;
+    }
+}
+
+.department__unit{
+	border:4px solid #EAEAEA;
+	    padding: 35px 26px 26px 26px;
+}
+
+.tg-icon{
+	margin-left: 13px;
+	img{
+		display: block;
+	}
+}
+
+.vb-icon{
+	margin-left: 13px;
+	img{
+		display: block;
+	}
+}
