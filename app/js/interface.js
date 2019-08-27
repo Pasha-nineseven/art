@@ -383,5 +383,6 @@ $('body').append(
         <li><a href="projects.html">Projects</a></li> \
         <li><a href="project.html">Project</a></li> \
         <li><a href="contacts.html">Contacts</a></li> \
+        <li><a href="object.html">Object</a></li> \
 	</ol> \
 </div>');

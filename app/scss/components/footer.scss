@@ -575,7 +575,7 @@
 	position: relative;
 }
 
-.toggle-map{
+.bottom-toggle-map{
 	display: none;
 	position: absolute;
 	left: 0;
@@ -626,4 +626,16 @@
 			}
 		}
 	}
+}
+
+.toggle-map.visible {
+    display: block;
+}
+.toggle-map {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
 }
