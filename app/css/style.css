@@ -8384,7 +8384,8 @@ a.breadcrumbs__item {
     background: #fff;
     border-bottom: 2px solid #000; }
   .contacts-feedback-map__link.active {
-    font-weight: 700; }
+    font-weight: 700;
+    pointer-events: none; }
 
 .contacts-feedback-map__wrapper {
   height: 434px;
@@ -9187,6 +9188,25 @@ a.breadcrumbs__item {
   border-top: 1px solid #fff;
   padding-top: 30px;
   margin-top: 30px; }
+
+.catalog .brands-collection__item {
+  width: 33.333%; }
+
+.catalog .contacts-feedback-toggle {
+  margin-bottom: 30px; }
+
+.catalog .brands-collection__img {
+  height: 269px; }
+
+.page-projects__list .catalog .paging {
+  margin-top: 80px; }
+
+.filter {
+  padding: 26px; }
+
+.catalog__add {
+  font-size: 16px;
+  margin-bottom: 30px; }
 
 .page-footer {
   -webkit-flex-shrink: 0;
