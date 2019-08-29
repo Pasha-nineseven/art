@@ -1328,6 +1328,7 @@ a.breadcrumbs__item{
 .mobile-filter-toggle__active{
 	display: block;
 	position: relative;
+	color: #000;
 	&:after{
 		content: "";
 		display: inline-block;
