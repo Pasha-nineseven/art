@@ -217,6 +217,28 @@ $(document).ready(function() {
             document.getElementById('mob_files').addEventListener('change', mob_handleFileSelect2, false);
         }
     }
+
+
+
+    //SUBSCRIBE-THANKS
+    $("body").on("click", ".js-subscribe-thanks", function(e){
+        e.preventDefault();
+        $('.page-footer-subscribe__wrap').hide();
+        $('.page-footer-subscribe__thanks').show();
+        $('.page-footer-subscribe').addClass('active');
+    });
+
+    //FEEDBACK-THANKS
+    $("body").on("click", ".js-feedback-thanks", function(e){
+        e.preventDefault();
+        $('.bottom-feedback-form__wrapper').hide();
+        $('.bottom-feedback-thanks').show();
+    });
+    $("body").on("click", ".js-bottom-feedback-thanks__close", function(e){
+        e.preventDefault();
+        $('.bottom-feedback-form__wrapper').show();
+        $('.bottom-feedback-thanks').hide();
+    });
 });
 
 

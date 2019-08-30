@@ -63,6 +63,9 @@
 		padding-right: 20px;
 		margin-bottom: 20px;
 	}
+	.bottom-feedback-thanks {
+	    padding: 47px 20px;
+	}
 }
 
 
@@ -463,6 +466,9 @@
 	.collection-info__items {
 	    margin-bottom: 10px;
 	}
+	.bottom-feedback-thanks {
+	    font-size: 28px;
+	}
 }
 
 @media screen and (max-width: 991px){
@@ -699,7 +705,8 @@
 	    left: 0;
 	    line-height: 1.2;
 	}
-	.page-footer-subscribe__title{
+	.page-footer-subscribe__title,
+	.page-footer-subscribe__thanks{
 		font-size: 20px;
 	}
 	.container-fullwidth,
@@ -937,6 +944,10 @@
 	.catalog-category{
 		column-count:1;
 	}
+	.bottom-feedback-thanks {
+	    font-size: 20px;
+	    padding: 38px 20px;
+	}
 	
 }
 
@@ -1143,7 +1154,8 @@
 	    	margin-right: 0;
 	    }
 	}
-	.page-footer-subscribe__title {
+	.page-footer-subscribe__title,
+	.page-footer-subscribe__thanks{
 	    font-size: 14px;
 	}
 	.page-footer-subscribe__input {
@@ -1483,6 +1495,10 @@
 		.brands-collection__img{
 			height: 110px;
 		}
+	}
+	.bottom-feedback-thanks {
+	    font-size: 17px;
+	    padding: 36px 20px;
 	}
 }
 
