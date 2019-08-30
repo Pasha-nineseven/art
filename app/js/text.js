@@ -18,9 +18,9 @@ function initializeDefaultMap() {
                 // balloonContentBody: 'Адрес',
             },{
             iconLayout: 'default#image',
-            iconImageHref: "img/svg/label.svg", 
-            iconImageSize: [52,60],
-            iconImageOffset: [-26, -60]
+            iconImageHref: "img/content/label.png", 
+            iconImageSize: [40,60],
+            iconImageOffset: [-20, -60]
         }); 
 
 

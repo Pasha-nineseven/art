@@ -269,9 +269,9 @@ function initializeMapOffice() {
                 // balloonContentBody: 'Адрес',
             },{
             iconLayout: 'default#image',
-            iconImageHref: "img/svg/label.svg", 
-            iconImageSize: [52,60],
-            iconImageOffset: [-26, -60]
+            iconImageHref: "img/content/label.png", 
+            iconImageSize: [40,60],
+            iconImageOffset: [-20, -60]
         }); 
         mapOffice.controls.add(new ymaps.control.ZoomControl({options: { position: { right: 20, top: 50 }}}));
         mapOffice.behaviors.disable('scrollZoom');
@@ -292,9 +292,9 @@ function initializeMapStock() {
                 // balloonContentBody: 'Адрес',
             },{
             iconLayout: 'default#image',
-            iconImageHref: "img/svg/label.svg", 
-            iconImageSize: [52,60],
-            iconImageOffset: [-26, -60]
+            iconImageHref: "img/content/label.png", 
+            iconImageSize: [40,60],
+            iconImageOffset: [-20, -60]
         }); 
         mapStock.controls.add(new ymaps.control.ZoomControl({options: { position: { right: 20, top: 50 }}}));
         mapStock.behaviors.disable('scrollZoom');

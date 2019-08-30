@@ -47,7 +47,7 @@ function initializeСontactsMap() {
         ],
         myCollection = new ymaps.GeoObjectCollection({}, {
             iconLayout: 'default#image',
-            iconImageHref: "img/svg/label-c.svg", 
+            iconImageHref: "img/content/label-c.png", 
             iconImageSize: [28,36],
             iconImageOffset: [-14, -36]
         });
