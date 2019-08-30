@@ -1387,6 +1387,62 @@ a.breadcrumbs__item{
 	}
 }
 
+.cookies{
+	background: #F1F1F1;
+	padding: 18px 0;
+	font-size: 14px;
+}
+
+.cookies__wrap{
+	position: relative;
+}
+
+.cookies__close{
+	position: absolute;
+	display: inline-block;
+	right: 0;
+	top: 10px;
+	&:before{
+		content: "";
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background: url(../img/svg/close-link.svg) no-repeat;
+		position: absolute;
+		right: -30px;
+		top: 50%;
+		transform:translateY(-50%);
+		transition:all 0.3s ease;
+	}
+	&:hover{
+		&:before{
+			opacity: 0.5;
+		}
+	}
+}
+
+
+.layout--404{
+	.page-content > .container-fluid,
+	.page-title .container-fluid{
+	    max-width:1360px;
+	}
+	.page-title {
+		h1{
+			font-size: 70px;
+			line-height: 1.1;
+		}
+	}
+	.page-content {
+	    padding-top: 60px;
+	}
+}
+
+
+.add404{
+	font-size: 36px;
+	font-family: 'playfair_displayregular';
+}
 
 
 @import "components/pages/index";

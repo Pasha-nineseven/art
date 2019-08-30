@@ -3804,7 +3804,7 @@ textarea, input {
   .page-header-contacts__item--phone:hover .phone-link {
     color: #929292; }
     .page-header-contacts__item--phone:hover .phone-link:after {
-      opacity: 1; }
+      border-bottom: 1px dashed #929292; }
 
 .phone-link {
   color: #000;
@@ -3816,13 +3816,12 @@ textarea, input {
     display: inline-block;
     width: 100%;
     height: 1px;
-    border-bottom: 1px dashed #929292;
+    border-bottom: 1px dashed #000;
     position: absolute;
     left: 0;
     bottom: -1px;
     -webkit-transition: opacity 0.3s ease;
-    transition: opacity 0.3s ease;
-    opacity: 0; }
+    transition: opacity 0.3s ease; }
 
 .phone-list {
   position: absolute;
@@ -5777,6 +5776,51 @@ a.breadcrumbs__item {
     margin-bottom: 50px; }
     .tech p:last-child {
       margin-bottom: 0; }
+
+.cookies {
+  background: #F1F1F1;
+  padding: 18px 0;
+  font-size: 14px; }
+
+.cookies__wrap {
+  position: relative; }
+
+.cookies__close {
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  top: 10px; }
+  .cookies__close:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/svg/close-link.svg) no-repeat;
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  .cookies__close:hover:before {
+    opacity: 0.5; }
+
+.layout--404 .page-content > .container-fluid,
+.layout--404 .page-title .container-fluid {
+  max-width: 1360px; }
+
+.layout--404 .page-title h1 {
+  font-size: 70px;
+  line-height: 1.1; }
+
+.layout--404 .page-content {
+  padding-top: 60px; }
+
+.add404 {
+  font-size: 36px;
+  font-family: 'playfair_displayregular'; }
 
 .main-products {
   padding: 10px 0 3px; }
@@ -7898,8 +7942,7 @@ a.breadcrumbs__item {
     left: 0;
     top: 0;
     position: absolute;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%); }
+    background: rgba(0, 0, 0, 0.15); }
 
 .project-slider__inner {
   position: relative;

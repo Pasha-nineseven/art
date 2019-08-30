@@ -411,5 +411,7 @@ $('body').append(
         <li><a href="catalog-category.html">Catalog-cat</a></li> \
         <li><a href="collection.html">Collection</a></li> \
         <li><a href="tech.html">тех-работы</a></li> \
+        <li><a href="cookies.html">Куки</a></li> \
+        <li><a href="page404.html">404</a></li> \
 	</ol> \
 </div>');

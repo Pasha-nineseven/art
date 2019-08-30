@@ -448,7 +448,7 @@
 		.phone-link{
 			color: $alt-color;
 			&:after{
-				opacity: 1;
+				border-bottom: 1px dashed $alt-color;
 			}
 		}
 	}
@@ -463,12 +463,12 @@
 		display: inline-block;
 		width: 100%;
 		height: 1px;
-		border-bottom: 1px dashed $alt-color;
+		border-bottom: 1px dashed #000;
 		position: absolute;
 		left: 0;
 		bottom: -1px;
 		transition: opacity 0.3s ease;
-		opacity: 0;
+		//opacity: 0;
 	}
 }
 
