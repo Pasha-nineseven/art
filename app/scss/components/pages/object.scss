@@ -18,6 +18,12 @@
 	.page-title .container-fluid{
 		padding-left: 36px;
 	}
+	a.breadcrumbs__item:hover {
+	    color: #fff;
+	}
+	a.breadcrumbs__item:before{
+		background: #fff;
+	}
 }
 
 .object-top-img{

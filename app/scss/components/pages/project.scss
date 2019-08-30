@@ -11,6 +11,12 @@
 	.breadcrumbs__item{
 		color: #fff;
 	}
+	a.breadcrumbs__item:hover {
+	    color: #fff;
+	}
+	a.breadcrumbs__item:before{
+		background: #fff;
+	}
 }
 .project-slider__item{
 	padding: 28px 30px 30px 30px;

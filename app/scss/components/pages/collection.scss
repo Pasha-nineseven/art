@@ -1,0 +1,31 @@
+
+.collection{
+	.index-info-news__title,
+	.index-info-news__more,
+	.index-info__top,
+	.project-info{
+		color: #000;
+	}
+	.index-info-news__more span:after{
+		background: #000;
+	}
+	.index-info-news{
+		margin-bottom: 0;
+	}
+	.index-info-news__inner{
+		background: #fff;
+	}
+}
+.collection__top .page-title {
+    color: #fff;
+}
+.collection__top .breadcrumbs__item {
+    color: #fff;
+    &:hover{
+    	color: #fff;
+    }
+}
+
+.collection__top a.breadcrumbs__item:before {
+    background: #fff;
+}

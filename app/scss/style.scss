@@ -1328,6 +1328,7 @@ a.breadcrumbs__item{
 .mobile-filter-toggle__active{
 	display: block;
 	position: relative;
+	color: #000;
 	&:after{
 		content: "";
 		display: inline-block;
@@ -1373,6 +1374,8 @@ a.breadcrumbs__item{
 @import "components/pages/object";
 
 @import "components/pages/catalog";
+
+@import "components/pages/collection";
 
 @import "components/footer";
 
