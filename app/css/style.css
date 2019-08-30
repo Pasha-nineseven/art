@@ -5752,6 +5752,32 @@ a.breadcrumbs__item {
 .mobile-filter-toggle__wrap {
   padding: 12px 35px 12px 20px; }
 
+.layout--tech .page-title .container-fluid {
+  max-width: 1360px; }
+
+.layout--tech h1 {
+  font-size: 70px;
+  line-height: 1.05; }
+
+.layout--tech .page-header__icon {
+  background: url(../img/svg/logo.svg) no-repeat;
+  width: 287px;
+  height: 58px;
+  background-size: contain; }
+
+.layout--tech .page-content {
+  padding-top: 27px; }
+
+.tech {
+  padding-top: 54px;
+  font-size: 30px;
+  line-height: 1.2;
+  font-family: 'playfair_displayregular'; }
+  .tech p {
+    margin-bottom: 50px; }
+    .tech p:last-child {
+      margin-bottom: 0; }
+
 .main-products {
   padding: 10px 0 3px; }
 
@@ -11054,7 +11080,18 @@ ul.catalog-category-list {
             column-count: 1; }
   .bottom-feedback-thanks {
     font-size: 20px;
-    padding: 38px 20px; } }
+    padding: 38px 20px; }
+  .complex__wrap:before {
+    width: -webkit-calc(100% - 60px);
+    width: calc(100% - 60px);
+    height: -webkit-calc(100% - 40px);
+    height: calc(100% - 40px);
+    top: 10px;
+    left: 30px; }
+  .layout--tech h1 {
+    font-size: 40px; }
+  .tech {
+    font-size: 20px; } }
 
 @media screen and (max-width: 700px) {
   .benefits__wrap {

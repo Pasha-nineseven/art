@@ -217,6 +217,28 @@ $(document).ready(function() {
             document.getElementById('mob_files').addEventListener('change', mob_handleFileSelect2, false);
         }
     }
+
+
+
+    //SUBSCRIBE-THANKS
+    $("body").on("click", ".js-subscribe-thanks", function(e){
+        e.preventDefault();
+        $('.page-footer-subscribe__wrap').hide();
+        $('.page-footer-subscribe__thanks').show();
+        $('.page-footer-subscribe').addClass('active');
+    });
+
+    //FEEDBACK-THANKS
+    $("body").on("click", ".js-feedback-thanks", function(e){
+        e.preventDefault();
+        $('.bottom-feedback-form__wrapper').hide();
+        $('.bottom-feedback-thanks').show();
+    });
+    $("body").on("click", ".js-bottom-feedback-thanks__close", function(e){
+        e.preventDefault();
+        $('.bottom-feedback-form__wrapper').show();
+        $('.bottom-feedback-thanks').hide();
+    });
 });
 
 
@@ -247,9 +269,9 @@ function initializeMapOffice() {
                 // balloonContentBody: 'Адрес',
             },{
             iconLayout: 'default#image',
-            iconImageHref: "img/svg/label.svg", 
-            iconImageSize: [52,60],
-            iconImageOffset: [-26, -60]
+            iconImageHref: "img/content/label.png", 
+            iconImageSize: [40,60],
+            iconImageOffset: [-20, -60]
         }); 
         mapOffice.controls.add(new ymaps.control.ZoomControl({options: { position: { right: 20, top: 50 }}}));
         mapOffice.behaviors.disable('scrollZoom');
@@ -270,9 +292,9 @@ function initializeMapStock() {
                 // balloonContentBody: 'Адрес',
             },{
             iconLayout: 'default#image',
-            iconImageHref: "img/svg/label.svg", 
-            iconImageSize: [52,60],
-            iconImageOffset: [-26, -60]
+            iconImageHref: "img/content/label.png", 
+            iconImageSize: [40,60],
+            iconImageOffset: [-20, -60]
         }); 
         mapStock.controls.add(new ymaps.control.ZoomControl({options: { position: { right: 20, top: 50 }}}));
         mapStock.behaviors.disable('scrollZoom');
@@ -382,5 +404,11 @@ $('body').append(
         <li><a href="downloads2.html">Downloads2</a></li> \
         <li><a href="projects.html">Projects</a></li> \
         <li><a href="project.html">Project</a></li> \
+        <li><a href="contacts.html">Contacts</a></li> \
+        <li><a href="object.html">Object</a></li> \
+        <li><a href="catalog.html">Catalog</a></li> \
+        <li><a href="catalog2.html">Catalog2</a></li> \
+        <li><a href="catalog-category.html">Catalog-cat</a></li> \
+        <li><a href="collection.html">Collection</a></li> \
 	</ol> \
 </div>');
