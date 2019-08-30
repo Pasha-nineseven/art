@@ -101,6 +101,13 @@ $(document).ready(function() {
 			        slidesToScroll: 1,
 			      }
 			    },
+                // {
+                //   breakpoint: 500,
+                //   settings: {
+                //     slidesToShow: 1,
+                //     slidesToScroll: 1,
+                //   }
+                // },
 			]
 	    });
 	};
