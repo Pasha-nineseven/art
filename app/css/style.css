@@ -10699,7 +10699,14 @@ ul.catalog-category-list {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
   .menu404__item--full .menu404-second {
-    width: 50%; } }
+    width: 50%; }
+  .department {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 40px; } }
 
 @media screen and (max-width: 1100px) {
   .bottom-menu__item--multiple {
@@ -11365,7 +11372,17 @@ ul.catalog-category-list {
     font-size: 24px;
     margin-bottom: 20px; }
   .layout--404 .page-title h1 {
-    font-size: 40px; } }
+    font-size: 40px; }
+  .department {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px; }
+  .department__top,
+  .department + .department .department__top {
+    min-height: inherit; } }
 
 @media screen and (max-width: 700px) {
   .benefits__wrap {
@@ -11896,7 +11913,18 @@ ul.catalog-category-list {
   .collection .collection-info {
     padding-top: 80px; }
   .collection .project-slider-wrap .slick-dots {
-    bottom: -60px; } }
+    bottom: -60px; }
+  .contacts-slider__photo {
+    padding-right: 16px;
+    margin-bottom: 16px; }
+  .department__top {
+    font-size: 20px; }
+  .contacts-slider__inner {
+    height: 80px; }
+  .top-catalog__close {
+    left: 24px; }
+  .close-link {
+    margin-left: 0; } }
 
 @media screen and (max-width: 400px) {
   .reviews__img {
