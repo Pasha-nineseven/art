@@ -534,7 +534,12 @@
 	.top-404{
 		margin-top: 0;
 	}
-	
+	.top-catalog__toggle{
+		display: none;
+	}
+	.top-catalog__toggle--mobile{
+		display: block;
+	}
 }
 
 @media screen and (max-width: 991px){
@@ -1395,8 +1400,8 @@
 		height: 20px;
 		background: url(../img/svg/close-link.svg) no-repeat;
 		position: absolute;
-		top: 18px;
-		left: 20px;
+		top: 16px;
+		left: 48px;
 	}
 	.top-catalog-sub__toggle{
 		display: inline-block;
