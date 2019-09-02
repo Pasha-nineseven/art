@@ -1608,6 +1608,10 @@
 	.menu404-second {
 	    padding-top: 15px;
 	}
+
+	.collection .collection-info{
+		padding-top: 60px;
+	}
 }
 
 @media screen and (max-width: 576px){
@@ -1678,6 +1682,14 @@
 	}
 	.catalog .brands-collection__img {
 	    height: 200px;
+	}
+	.collection .collection-info {
+	    padding-top: 80px;
+	}
+	.collection{
+		.project-slider-wrap .slick-dots {
+		    bottom: -60px;
+		}
 	}
 }
 

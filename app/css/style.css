@@ -11837,7 +11837,9 @@ ul.catalog-category-list {
   .menu404__link {
     font-size: 20px; }
   .menu404-second {
-    padding-top: 15px; } }
+    padding-top: 15px; }
+  .collection .collection-info {
+    padding-top: 60px; } }
 
 @media screen and (max-width: 576px) {
   .projects__item--sm-height .projects__name {
@@ -11890,7 +11892,11 @@ ul.catalog-category-list {
   .catalog .brands-collection__item {
     width: 100%; }
   .catalog .brands-collection__img {
-    height: 200px; } }
+    height: 200px; }
+  .collection .collection-info {
+    padding-top: 80px; }
+  .collection .project-slider-wrap .slick-dots {
+    bottom: -60px; } }
 
 @media screen and (max-width: 400px) {
   .reviews__img {
