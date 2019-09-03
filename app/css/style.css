@@ -10277,6 +10277,11 @@ input[type="text"].where-search__input {
 ymaps[class*="-copyright"] {
   display: none !important; }
 
+.where-select__title {
+  min-width: 100%; }
+  .where-select__title h2 {
+    margin-bottom: 5px; }
+
 .where-select__list {
   display: -webkit-box;
   display: -webkit-flex;

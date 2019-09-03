@@ -2,10 +2,6 @@ $(document).ready(function() {
 	//MAP
 	if($('#where-map').length){
 		ymaps.ready(initPharmaciesListMap);
-
-		//Показать Количество
-		// var citiesCount = cities.length;
-		// $('.salon-select__count span').text(+citiesCount);
 	}
 
 });
@@ -19,16 +15,35 @@ function initPharmaciesListMap() {
 			zoom: 13,
 			controls: []
 	}); 
-	// Контейнер для меню.
-	list = $('.where-select__list');
+	// Контейнер для городов.
+	listBrest = $('.where-select__list-brest');
+	listMinsk = $('.where-select__list-minsk');
+	listVitebsk = $('.where-select__list-vitebsk');
 	
-	for (var i = 0; i < cities.length; i++) {
-		createSelectCities(cities[i]);
+	for (var i = 0; i < citiesBrest.length; i++) {
+		createSelectCities(citiesBrest[i]);
 	}
 
-	for (var j = 0; j < cities.length; j++) {
-		createList(cities[j], cluster, list);
+	for (var j = 0; j < citiesBrest.length; j++) {
+		createList(citiesBrest[j], cluster, listBrest);
 	}
+
+	for (var i = 0; i < citiesMinsk.length; i++) {
+		createSelectCities(citiesMinsk[i]);
+	}
+
+	for (var j = 0; j < citiesMinsk.length; j++) {
+		createList(citiesMinsk[j], cluster, listMinsk);
+	}
+
+	for (var i = 0; i < citiesVitebsk.length; i++) {
+		createSelectCities(citiesVitebsk[i]);
+	}
+
+	for (var j = 0; j < citiesVitebsk.length; j++) {
+		createList(citiesVitebsk[j], cluster, listVitebsk);
+	}
+
 
 	if ($(window).width() <= 1023)
 		myMap.setCenter([52.093904, 23.704880]);
@@ -49,17 +64,10 @@ function initPharmaciesListMap() {
 		// Добавляем кластер на карту.
 		myMap.geoObjects.add(cluster);
 
-		//Создаем список меток
-		// for (var j = 0; j < cities.length; j++) {
-		// 	createList(cities[j], cluster, list);
-		// }
 	}
 
 	// Создаем список
 	function createList (item, cluster, list) {
-		if(item.phone2)
-			phone2Div = '<div class="where-select__phone">' + item.phone2 + '</div>';
-
 		// Создаем единицу списка
 		var listItem 	= 	$('<a href="#" class="where-select__item" data-city="' + item.city + '" data-id="' + item.id + '">\
 								<div class="where-select__inner">\
@@ -92,7 +100,7 @@ function initPharmaciesListMap() {
 		// Добавляем метку в кластер
 		cluster.add(placemark);
 		// Добавляем города в список
-		listItem.appendTo(list)
+		listItem.appendTo(list);
 
 		// Вешаем обработчик на метку
 		placemark.events.add('click', function (e) {
@@ -102,11 +110,6 @@ function initPharmaciesListMap() {
 			$('[data-id='+item.id+']').addClass('active');
 
 			var activeEl = $('[data-id='+item.id+']');
-
-		 // 	$('.salon-select__list').scrollTo(activeEl, {
-			//   	axis: 'y',
-			//   	duration: 100,
-			// });
 
 			$('html, body').animate({
 		        scrollTop: parseInt(activeEl.offset().top)
@@ -131,7 +134,5 @@ function initPharmaciesListMap() {
 	if ($(window).width() <= 767)
 		myMap.behaviors.disable('drag');
 
-	// Добавляем список
-	list.appendTo($('.salon-select'));
 }
 

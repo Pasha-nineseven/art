@@ -97,6 +97,12 @@ ymaps[class*="-copyright"] {
 	display: none!important;
 }
 
+.where-select__title{
+	min-width: 100%;
+	h2{
+		margin-bottom: 5px;
+	}
+}
 
 .where-select__list{
 	display: flex;

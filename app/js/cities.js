@@ -1,6 +1,6 @@
 
 // Города
-var cities = [
+var citiesBrest = [
 	{
 		id: 1,
 		center: [52.103315, 23.715565],
@@ -34,6 +34,10 @@ var cities = [
 		phone2: "",
 		site: "scala.by"
 	},
+];
+
+
+var citiesMinsk = [
 	{
 		id: 7,
 		center: [53.919791, 27.558398],
@@ -68,38 +72,20 @@ var cities = [
 		site: "scala.by"
 	},
 	{
-		id: 10,
-		center: [53.692582, 23.813533],
+		id: 99,
+		center: [53.896898, 27.522151],
 		img: "img/content/contact-img2.jpg",
-		city: "Гродно",
-		address: "ул.Ленина, 10",
+		city: "Минск",
+		address: "ул.Ленина, 33",
 		name: "Торговый центр «Скала»",
 		phone: "+375 (17) 237-98-98",
-		phone2: "",
-		site: "artkeramika.by"
-	},
-	{
-		id: 11,
-		center: [53.686927, 23.861769],
-		img: "img/content/contact-img3.jpg",
-		city: "Гродно",
-		address: "ул.Ленина, 11",
-		name: "Магазин «Керамин»",
-		phone: "+375 (17) 237-98-98",
-		phone2: "",
-		site: "oma.by"
-	},
-	{
-		id: 12,
-		center: [53.678978, 23.836278],
-		img: "img/content/contact-img1.jpg",
-		city: "Гродно",
-		address: "ул.Ленина, 12",
-		name: "Торговый центр «Скала»",
-		phone: "+375 (17) 237-98-98",
-		phone2: "",
+		phone2: "+375 (17) 999-99-99",
 		site: "scala.by"
 	},
+];
+
+
+var citiesVitebsk = [
 	{
 		id: 13,
 		center: [55.190321, 30.193929],
