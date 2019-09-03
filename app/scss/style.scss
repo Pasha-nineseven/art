@@ -1388,9 +1388,15 @@ a.breadcrumbs__item{
 }
 
 .cookies{
-	background: #F1F1F1;
-	padding: 18px 0;
-	font-size: 14px;
+    background: #F1F1F1;
+    padding: 18px 0;
+    position: fixed;
+    font-size: 14px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    opacity: 0.9;
 }
 
 .cookies__wrap{
@@ -1630,6 +1636,22 @@ a.breadcrumbs__item{
     }
 }
 
+.zoomContainer{
+	z-index: 15;
+}
+
+// .project-slider__zoom{
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	width: 100%;
+// 	height: 100%;
+// }
+
+
+
+
+
 @import "components/pages/index";
 
 @import "components/pages/news";
@@ -1651,6 +1673,8 @@ a.breadcrumbs__item{
 @import "components/pages/catalog";
 
 @import "components/pages/collection";
+
+@import "components/pages/gde_kupit";
 
 @import "components/footer";
 
