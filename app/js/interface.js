@@ -172,6 +172,19 @@ $(document).ready(function() {
         parent.jQuery.fancybox.getInstance().close();
     });
 
+    //POPUP-VIDEO
+    $(".js-popup-video").fancybox({
+        speed : 330,
+        transitionEffect: "slide", 
+        animationEffect: "zoom-in-out", 
+        infobar: false,
+        buttons: [
+            "close"
+        ],
+    });
+
+
+
     //ACCORDEON
     $("body").on("click", ".accordeon__link", function(e){
         e.preventDefault();

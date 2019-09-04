@@ -26,6 +26,21 @@ $(document).ready(function() {
             $('#counter').removeClass();
             $('#counter').addClass('activeSlide-' + slideCurrent);
             $('#counter').removeClass('last-slide');
+
+            //ZOOM
+            var img = $(slick.$slides[nextSlide]).find(".project-slider__zoom");
+
+            $('.zoomWindowContainer,.zoomContainer').remove();
+            $(img).elevateZoom({
+                gallery:'gallery_01',
+                cursor: 'pointer',
+                galleryActiveClass: 'active',
+                imageCrossfade: true,
+                scrollZoom : true,
+                zoomType                : "inner",
+                //responsive: true
+            });
+      
         });
         $gallery.on("afterChange", function(event, slick, currentSlide){
             var slideCurrent = slick.currentSlide+1;
@@ -37,7 +52,6 @@ $(document).ready(function() {
         });
 
         $gallery.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
-	        //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
 	        var i = (currentSlide ? currentSlide : 0) + 1;
 	        $status.text('0' + i);
 	        $statusCount.text('0' + slick.slideCount);
@@ -55,8 +69,6 @@ $(document).ready(function() {
             fade: true,
             prevArrow: $(".project-prev"),
             nextArrow: $(".project-next"),
-            //autoplay: true,
-           // autoplaySpeed: 4000,
             pauseOnDotsHover: true,
             responsive: [
 			    {
@@ -101,13 +113,6 @@ $(document).ready(function() {
 			        slidesToScroll: 1,
 			      }
 			    },
-                // {
-                //   breakpoint: 500,
-                //   settings: {
-                //     slidesToShow: 1,
-                //     slidesToScroll: 1,
-                //   }
-                // },
 			]
 	    });
 	};
@@ -128,17 +133,26 @@ $(document).ready(function() {
             infinite: false,
             slidesToShow: 1,
             slidesToScroll: 1,
-    //      responsive: [
-            //     {
-            //       breakpoint: 800,
-            //       settings: {
-            //         slidesToShow: 2,
-            //         slidesToScroll: 1,
-            //       }
-            //     },
-            // ]
         });
     };
 
+
+
+    $('.slick-current .project-slider__zoom').elevateZoom({
+        gallery:'gallery_01',
+        cursor: 'pointer',
+        galleryActiveClass: 'active',
+        imageCrossfade: true,
+        scrollZoom : true,
+        zoomType                : "inner",
+        //responsive: true
+    });
+
+
+
+    //PRINT
+    $('.js-collection__print').click(function(){
+        window.print();
+    });
 });
 
