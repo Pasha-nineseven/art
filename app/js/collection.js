@@ -26,21 +26,6 @@ $(document).ready(function() {
             $('#counter').removeClass();
             $('#counter').addClass('activeSlide-' + slideCurrent);
             $('#counter').removeClass('last-slide');
-
-            //ZOOM
-            var img = $(slick.$slides[nextSlide]).find(".project-slider__zoom");
-
-            $('.zoomWindowContainer,.zoomContainer').remove();
-            $(img).elevateZoom({
-                gallery:'gallery_01',
-                cursor: 'pointer',
-                galleryActiveClass: 'active',
-                imageCrossfade: true,
-                scrollZoom : true,
-                zoomType                : "inner",
-                //responsive: true
-            });
-      
         });
         $gallery.on("afterChange", function(event, slick, currentSlide){
             var slideCurrent = slick.currentSlide+1;
@@ -135,18 +120,6 @@ $(document).ready(function() {
             slidesToScroll: 1,
         });
     };
-
-
-
-    $('.slick-current .project-slider__zoom').elevateZoom({
-        gallery:'gallery_01',
-        cursor: 'pointer',
-        galleryActiveClass: 'active',
-        imageCrossfade: true,
-        scrollZoom : true,
-        zoomType                : "inner",
-        //responsive: true
-    });
 
 
 

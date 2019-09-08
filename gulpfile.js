@@ -12,12 +12,12 @@ var gulp = 			require('gulp');
     autoprefixer =  require('gulp-autoprefixer');
     fileinclude =   require('gulp-file-include');
 	watch = 		require('gulp-watch');
-    //wait =          require('gulp-wait');
+    wait =          require('gulp-wait');
 
 
 gulp.task('sass', function(){
 	return gulp.src('app/scss/*.scss')
-    //.pipe(wait(500))
+    .pipe(wait(500))
 	.pipe(sass())
     .pipe(autoprefixer(['last 15 versions']))
 	.pipe(gulp.dest('app/css'))
@@ -37,7 +37,6 @@ gulp.task('scripts', function(){
         'app/libs/tooltip/tooltipster.bundle.min.js',
         'app/libs/respTabs/jquery.responsiveTabs.js',
         'app/libs/malihu/jquery.mCustomScrollbar.js',
-        'app/libs/zoom/jquery.elevatezoom.js',
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())

@@ -288,10 +288,12 @@
 	transition: all 0.3s ease;
 	    line-height: 1.2;
     margin-bottom: 29px;
+        text-decoration-skip-ink: none;
 }
 .projects__add{
 	font-size: 14px;
 	    line-height: 1.4;
+	    font-weight: 400;
 }
 
 .banner{
@@ -847,6 +849,8 @@
 	position: relative;
 	    padding-bottom: 31px;
     margin-bottom: 41px;
+    display: block;
+    color: #fff;
 	&:after{
 		content: "";
 		display: block;
@@ -863,6 +867,18 @@
 			display: none;
 		}
 	}
+	&:hover{
+		.index-info-news__title{
+			text-decoration: underline;
+		}
+		.index-info-news__more{
+			span{
+				&:after{
+					height: 4px;
+				}
+			}
+		}
+	}
 }
 
 .index-info-news__title{
@@ -871,9 +887,7 @@
     margin-bottom: 12px;
     color: #fff;
     display: inline-block;
-	&:hover{
-		text-decoration: underline;
-	}
+    text-decoration-skip-ink: none;
 }
 .index-info-news__txt{
 	font-size: 14px;
@@ -898,13 +912,6 @@
 			bottom: -5px;
 			left: 0;
 			transition: all 0.3s ease;
-		}
-	}
-	&:hover{
-		span{
-			&:after{
-				height: 4px;
-			}
 		}
 	}
 }
@@ -1113,7 +1120,7 @@
 
 .main-slider-preview{
 	z-index: 3;
-	transition:all 1.7s ease;
+	transition:all 0.2s ease;
 	opacity: 0;  
 	visibility: hidden;
 	position: absolute;

@@ -111,7 +111,8 @@ $(document).ready(function() {
     //TABS
     if ($('.resp-tabs').length>0) {
         $('.resp-tabs').responsiveTabs({
-            startCollapsed: 'accordion'
+            startCollapsed: 'accordion',
+            setHash: true,
         });
     }
 
@@ -398,7 +399,7 @@ function mob_handleFileSelect2(evt) {
 
 // links pages
 $('body').append(
-	'<div style="position: fixed; z-index: 1005; bottom: 0; right: 0; background: #fff; border: solid 1px #828286; width: 200px;"> \
+	'<div id="pages-wrap" style="position: fixed; z-index: 1005; bottom: 0; right: 0; background: #fff; border: solid 1px #828286; width: 200px;"> \
 		<a href="javascript:void(0);" style="float: right;background:#ccc; color:#000; padding: 5px 10px; text-decoration: none; font-size: 16px" onclick="$(this).parent().hide()">Close X</a> \
 	<style> \
 		#pages { padding: 10px 20px 0 50px; font-size: 18px; } \
@@ -420,10 +421,9 @@ $('body').append(
         <li><a href="contacts.html">Contacts</a></li> \
         <li><a href="object.html">Object</a></li> \
         <li><a href="catalog.html">Catalog</a></li> \
-        <li><a href="catalog2.html">Catalog2</a></li> \
         <li><a href="catalog-category.html">Catalog-cat</a></li> \
         <li><a href="collection.html">Collection</a></li> \
-        <li><a href="collection2.html">Collection2</a></li> \
+        <li><a href="tovar.html">Tovar</a></li> \
         <li><a href="tech.html">тех-работы</a></li> \
         <li><a href="cookies.html">Куки</a></li> \
         <li><a href="page404.html">404</a></li> \

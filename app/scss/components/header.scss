@@ -152,7 +152,7 @@
 
 .submenu__item{
 	font-size: 14px;
-	font-weight: 700;
+	font-weight: 500;
 	display: block;
 	margin-bottom: 13px;
 	color: #000;
@@ -186,7 +186,8 @@
 			display: none!important;
 		}
 	}
-	&:hover{
+	&:hover,
+	&.active{
 		span{
 			color: #929292;
 			&:before{
@@ -286,19 +287,22 @@
 
 .top-menu__item--sub{
 	position: relative;
-	span{
-		&:after{
-			content: "";
-			width: 7px;
-			height: 7px;
-			display: inline-block;
-			position: absolute;
-			left: calc(100% + 5px);
-			top: 50%;
-			transform: translateY(-50%);
-			background: url(../img/svg/sub.svg) no-repeat;
-			    margin-top: -1px;
+	.top-menu__link{
+		span{
+			&:after{
+				content: "";
+				width: 7px;
+				height: 7px;
+				display: inline-block;
+				position: absolute;
+				left: calc(100% + 5px);
+				top: 50%;
+				transform: translateY(-50%);
+				background: url(../img/svg/sub.svg) no-repeat;
+				    margin-top: -1px;
+			}
 		}
+		
 	}
 	&:hover{
 		.submenu{
@@ -1003,7 +1007,8 @@ a.top-catalog__link{
 	span{
 
 	}
-	&:hover{
+	&:hover,
+	&.active{
 		color: #929292;
 		span{
 			text-decoration: underline;

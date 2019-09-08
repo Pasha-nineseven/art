@@ -46,7 +46,7 @@ function initializeСontactsMap() {
         var placemark1 = new ymaps.Placemark([53.899888,27.566757], {
             balloonContentHeader: '<div class="placemark-address">г.Минск, ул.Скрыганова 3к2, офис 23</div>',
             balloonContentBody: '<a class="placemark-phone" href="tel:+375291994451">+375 (29) 199-44-51 <span class="tg-icon"><img src="img/svg/tg-icon.svg" alt=""></span><span class="vb-icon"><img src="img/svg/viber-icon.svg" alt=""></span><span class="ph-icon"><img src="img/svg/phone-icon.svg" alt=""></span></a>' +
-                '<div class="placemark-time-wrap"><span class="placemark-time-icon"><img src="img/content/time-icon.png" alt=""></span><div class="placemark-time">пн-пт с 9:00 до 17:00</div>' +
+                '<div class="placemark-time-wrap"><div class="placemark-time">пн-пт с 9:00 до 17:00</div>' +
                 '<div class="placemark-time">сб с 10:00 до 17:00</div></div>'
         }, {
             iconLayout: 'default#image',
@@ -58,7 +58,7 @@ function initializeСontactsMap() {
         var placemark2 = new ymaps.Placemark([53.897888, 27.586757], {
             balloonContentHeader: '<div class="placemark-address">г.Минск, ул.Скрыганова 18, офис 213</div>',
             balloonContentBody: '<a class="placemark-phone" href="tel:+375291994452">+375 (29) 199-44-52 <span class="ph-icon"><img src="img/svg/phone-icon.svg" alt=""></span></a>' +
-                '<div class="placemark-time-wrap"><span class="placemark-time-icon"><img src="img/content/time-icon.png" alt=""></span><div class="placemark-time">пн-пт с 9:00 до 17:00</div>' +
+                '<div class="placemark-time-wrap"><div class="placemark-time">пн-пт с 9:00 до 17:00</div>' +
                 '<div class="placemark-time">сб с 10:00 до 12:00</div></div>'
         }, {
             iconLayout: 'default#image',

@@ -481,6 +481,9 @@
 	    min-width: 80px;
 	}
 	.collection{
+		.project-slider{
+			width: 100%;
+		}
 		.project-slider__img {
 		    width: 100%;
 		    height: 400px;
@@ -562,6 +565,9 @@
 	}
 	.where-select__list{
 		margin-right: -15px;
+	}
+	.project .project-slider-wrap .pagingInfo {
+	    top: 424px;
 	}
 }
 
@@ -1102,6 +1108,9 @@
 	}
 	.project-slider__zoom{
 		position: static!important;
+	}
+	.project .project-slider-wrap .pagingInfo {
+	    top: 300px;
 	}
 }
 
@@ -1847,6 +1856,7 @@
 
 
 @media print {
+	#pages-wrap,
 	.page-header__info,
 	.top,
 	.breadcrumbs,
