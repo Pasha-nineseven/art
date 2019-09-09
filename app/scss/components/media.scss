@@ -678,6 +678,10 @@
 	.collection .index-info-news__item{
 		margin-bottom: 0;
 	}
+	.top-404:before {
+	    width: 215px;
+	    height: 45px;
+	}
 }
 
 @media screen and (max-width: 800px){
@@ -1111,6 +1115,9 @@
 	}
 	.project .project-slider-wrap .pagingInfo {
 	    top: 300px;
+	}
+	.top-404:before{
+		top: 20px;
 	}
 }
 
@@ -1729,6 +1736,11 @@
 	}
 	.where-map-wrap {
 	    height: 350px;
+	}
+	.top-404:before {
+	    top: -53px;
+	    right: 50%;
+    transform: translateX(50%);
 	}
 }
 

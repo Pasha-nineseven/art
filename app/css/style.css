@@ -5863,7 +5863,8 @@ a.breadcrumbs__item {
   border: 4px solid #EAEAEA;
   padding: 48px 126px 54px 68px;
   font-size: 14px;
-  line-height: 1.2; }
+  line-height: 1.2;
+  position: relative; }
   .top-404 p {
     margin-bottom: 30px; }
     .top-404 p:last-child {
@@ -5885,6 +5886,16 @@ a.breadcrumbs__item {
         background-color: #000;
         width: 9px;
         height: 2px; }
+  .top-404:before {
+    content: "";
+    display: inline-block;
+    background: url(../img/svg/logo.svg) no-repeat;
+    width: 287px;
+    height: 58px;
+    background-size: contain;
+    position: absolute;
+    right: 20px;
+    top: 65px; }
 
 .go-main {
   color: #000;
@@ -10038,8 +10049,7 @@ ul.catalog-category-list {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  display: block; }
+          justify-content: center; }
   .collection--product .project-slider__img img {
     display: block;
     max-width: 100%;
@@ -11696,7 +11706,10 @@ ymaps[class*="-copyright"] {
   .collection .index-info-news__inner {
     padding: 0; }
   .collection .index-info-news__item {
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+  .top-404:before {
+    width: 215px;
+    height: 45px; } }
 
 @media screen and (max-width: 800px) {
   .page-footer-contacts__item {
@@ -12068,7 +12081,9 @@ ymaps[class*="-copyright"] {
   .project-slider__zoom {
     position: static !important; }
   .project .project-slider-wrap .pagingInfo {
-    top: 300px; } }
+    top: 300px; }
+  .top-404:before {
+    top: 20px; } }
 
 @media screen and (max-width: 700px) {
   .benefits__wrap {
@@ -12583,7 +12598,13 @@ ymaps[class*="-copyright"] {
   .where-select__item {
     width: 100%; }
   .where-map-wrap {
-    height: 350px; } }
+    height: 350px; }
+  .top-404:before {
+    top: -53px;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+            transform: translateX(50%); } }
 
 @media screen and (max-width: 576px) {
   .projects__item--sm-height .projects__name {
