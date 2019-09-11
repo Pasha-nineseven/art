@@ -1489,6 +1489,7 @@ a.breadcrumbs__item{
     padding: 48px 126px 54px 68px;
     font-size: 14px;
     line-height: 1.2;
+    position: relative;
     p{
     	    margin-bottom: 30px;
     	    &:last-child{
@@ -1517,6 +1518,17 @@ a.breadcrumbs__item{
 				height: 2px;
 		    }
 		}
+	}
+	&:before{
+		content: "";
+		display: inline-block;
+		background: url(../img/svg/logo.svg) no-repeat;
+		width: 287px;
+		height: 58px;
+		background-size: contain;
+		position: absolute;
+		    right: 20px;
+    top: 65px;
 	}
 }
 
