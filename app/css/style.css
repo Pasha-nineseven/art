@@ -12583,7 +12583,18 @@ ymaps[class*="-copyright"] {
   .where-select__item {
     width: 100%; }
   .where-map-wrap {
-    height: 350px; } }
+    height: 350px; }
+  #pages {
+    font-size: 12px !important;
+    padding: 10px 12px 0 25px !important; }
+    #pages a {
+      font-size: 12px; }
+    #pages li {
+      margin: 0 0 4px 0 !important; }
+  #pages-wrap {
+    width: 160px !important; }
+    #pages-wrap > a {
+      font-size: 10px !important; } }
 
 @media screen and (max-width: 576px) {
   .projects__item--sm-height .projects__name {

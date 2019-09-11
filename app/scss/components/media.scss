@@ -1730,6 +1730,22 @@
 	.where-map-wrap {
 	    height: 350px;
 	}
+	#pages{
+		font-size: 12px!important;
+		padding: 10px 12px 0 25px!important;
+		a{
+			font-size: 12px;
+		}
+		li{
+			margin: 0 0 4px 0!important;
+		}
+	}
+	#pages-wrap{
+		width: 160px!important;
+		>a{
+			font-size: 10px!important;
+		}
+	}
 }
 
 @media screen and (max-width: 576px){
