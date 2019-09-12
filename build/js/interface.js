@@ -1,17 +1,5 @@
 $(document).ready(function() {
 	flexibility(document.documentElement);
-    //SUBMENU
-	// $("body").on("click", ".top-menu__item--sub", function(){
-	// 	$(this).toggleClass('active');
-	// });
- //    $(document).click(function (e){ 
- //        var div = $(".top-menu__item--sub");
- //        if (!div.is(e.target)
- //            && div.has(e.target).length === 0) {
- //            $(".top-menu__item--sub").removeClass('active');
- //        }
- //    });
-
 
     //SUBMENU
     $("body").on("click", ".js-mobile-filter-toggle", function(e){
@@ -253,6 +241,13 @@ $(document).ready(function() {
         $('.bottom-feedback-form__wrapper').show();
         $('.bottom-feedback-thanks').hide();
     });
+
+
+
+    //MOBILE-SEARCH
+    $("body").on("click", ".js-file-remove", function(){
+        $(this).parents('li').remove();
+    });
 });
 
 
@@ -262,9 +257,7 @@ $(window).resize(function () {
 	setFullWidth();
 });
 
-// $(window).load(function(){
 
-// });
 
 // functions
 var mapOffice,
@@ -339,7 +332,7 @@ function handleFileSelect(evt) {
     // files is a FileList of File objects. List some properties.
     var output = [];
     for (var i = 0, f; f = files[i]; i++) {
-        output.push('<div><li><strong>', escape(f.name), '</strong> (', f.type, ') - ', '<i>'+f.size+' байт</i></li>');
+        output.push('<div><li><strong>', escape(f.name), '</strong> (', f.type, ') - ', '<i>'+f.size+' байт</i><a href="#" class="file-remove js-file-remove"></a></li>');
     }
     document.getElementById('list_content').innerHTML = '<div class="list_content_msg">Файл загружен:</div><ul>' + output.join('') + '</ul>';
 }
@@ -356,7 +349,7 @@ function handleFileSelect2(evt) {
     // files is a FileList of File objects. List some properties.
     var output = [];
     for (var i = 0, f; f = files[i]; i++) {
-        output.push('<li><strong>', escape(f.name), '</strong> (', f.type, ') - ', '<i>'+f.size+' байт</i></li>');
+        output.push('<li><strong>', escape(f.name), '</strong> (', f.type, ') - ', '<i>'+f.size+' байт</i><a href="#" class="file-remove js-file-remove"></a></li>');
     }
     document.getElementById('list_content').innerHTML = '<div class="list_content_msg">Файл загружен:</div><ul>' + output.join('') + '</ul>';
 }
@@ -389,7 +382,7 @@ function mob_handleFileSelect2(evt) {
     // files is a FileList of File objects. List some properties.
     var output = [];
     for (var i = 0, f; f = files[i]; i++) {
-        output.push('<li><strong>', escape(f.name), '</strong> (', f.type, ') - ', '<i>'+f.size+' байт</i></li>');
+        output.push('<li><strong>', escape(f.name), '</strong> (', f.type, ') - ', '<i>'+f.size+' байт</i><a href="#" class="file-remove js-file-remove"></a></li>');
     }
     document.getElementById('mob_list_content').innerHTML = '<div class="list_content_msg">Файл загружен:</div><ul>' + output.join('') + '</ul>';
 }

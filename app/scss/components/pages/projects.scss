@@ -97,6 +97,11 @@
 		display: block;
 	}
 }
+.aside-categories__icon:empty{
+	width: 0;
+    min-width: 0;
+}
+
 .aside-categories__txt{
 	font-size: 14px;
 	color: #000;

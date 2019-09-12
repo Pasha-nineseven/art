@@ -238,10 +238,6 @@
 		cursor: pointer;
 		z-index: 5;
 	}
-	input[type="checkbox"]:checked+ label:before{
-		// background: #BBEE2A;
-		// border: 2px solid #BBEE2A;
-	}
 	input[type="checkbox"]:not(:checked) + label:after,
 	input[type="checkbox"]:checked + label:after {
 		content: '';
