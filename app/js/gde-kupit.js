@@ -69,18 +69,18 @@ function initPharmaciesListMap() {
 	// Создаем список
 	function createList (item, cluster, list) {
 		// Создаем единицу списка
-		var listItem 	= 	$('<a href="#" class="where-select__item" data-city="' + item.city + '" data-id="' + item.id + '">\
+		var listItem 	= 	$('<div class="where-select__item" data-city="' + item.city + '" data-id="' + item.id + '">\
 								<div class="where-select__inner">\
-									<div class="where-select__img"><img src="' + item.img + '" alt=""></div>\
+									<a href="#" class="where-select__img"><img src="' + item.img + '" alt=""></a>\
 									<div class="where-select__info">\
-									  	<div class="where-select__title"><span>' + item.city + ', ' + item.address + '</span></div>\
+									  	<a href="#" class="where-select__title"><span>' + item.city + ', ' + item.address + '</span></a>\
 									  	<div class="where-select__name">'+ item.name +'</div>\
-									  	<div class="where-select__phone">' + item.phone + '</div>\
-									  	<div class="where-select__phone">' + item.phone2 + '</div>\
+									  	<a href="tel:' + item.phone +'" class="where-select__phone">' + item.phone + '</a>\
+									  	<a href="tel:' + item.phone2 +'" class="where-select__phone">' + item.phone2 + '</a>\
 									  	<div class="where-select__site">'+ item.site +'</div>\
 								  	</div>\
 								</div>\
-						  	</a>'
+						  	</div>'
 		),
 		
 

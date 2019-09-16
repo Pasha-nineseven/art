@@ -569,6 +569,12 @@
 	.project .project-slider-wrap .pagingInfo {
 	    top: 424px;
 	}
+	.collection-full {
+	    position: static;
+	    transform: none;
+	    text-align: center;
+	    padding-top: 13px;
+	}
 }
 
 @media screen and (max-width: 991px){
@@ -1118,6 +1124,10 @@
 	}
 	.top-404:before{
 		top: 20px;
+	}
+	.collection-full__link:before,
+	.collection-full__link:after{
+		display: none;
 	}
 }
 
@@ -1752,10 +1762,11 @@
 		>a{
 			font-size: 10px!important;
 		}
+	}
 	.top-404:before {
 	    top: -53px;
 	    right: 50%;
-    transform: translateX(50%);
+    	transform: translateX(50%);
 	}
 }
 

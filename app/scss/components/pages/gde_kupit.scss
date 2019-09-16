@@ -99,6 +99,8 @@ ymaps[class*="-copyright"] {
 
 .where-select__title{
 	min-width: 100%;
+	display: block;
+	color: #000;
 	h2{
 		margin-bottom: 5px;
 	}
@@ -202,6 +204,8 @@ ymaps[class*="-copyright"] {
 	position: relative;
 	padding-left: 20px;
 	position: relative;
+	display: block;
+	color: #000;
 	&:before{
 		content: "";
 		display: inline-block;
@@ -240,6 +244,7 @@ ymaps[class*="-copyright"] {
 	height: 231px;
 	position: relative;
 	z-index: 3;
+	display: block;
 	img{
 		display: block;
 		width: 100%;
