@@ -12678,9 +12678,6 @@ ymaps[class*="-copyright"] {
     right: 50%;
     -webkit-transform: translateX(50%);
         -ms-transform: translateX(50%);
-<<<<<<< HEAD
-            transform: translateX(50%); } }
-=======
             transform: translateX(50%); }
   .bottom-menu-gen:before {
     display: none; }
@@ -12697,7 +12694,6 @@ ymaps[class*="-copyright"] {
     width: 100%; }
   .popup-feedback h4 {
     margin-bottom: 20px; } }
->>>>>>> aaff64099b26380c8614c4f21e12ca8eddde5f22
 
 @media screen and (max-width: 576px) {
   .projects__item--sm-height .projects__name {
