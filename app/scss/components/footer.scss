@@ -145,6 +145,31 @@
 	font-weight: 500;
 	display: block;
 	color: #000;
+	span{
+		position: relative;
+		transition: color 0.3s ease;
+		&:after{
+			content: "";
+			display: block;
+			height: 1px;
+			width: 100%;
+			background: #000;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			transition: all 0.3s ease;
+			opacity: 0;
+		}
+	}
+	&:hover{
+		span{
+			color: #929292;
+			&:after {
+			    bottom: -2px;
+			    opacity: 1;
+			}
+		}
+	}
 }
 
 .page-footer-contacts__sqheme{
@@ -612,6 +637,15 @@
 .bottom-feedback-form__phone{
 	padding-top: 8px;
 	color: #000;
+	span{
+		position: relative;
+		transition: color 0.3s ease;
+	}
+	&:hover{
+		span{
+			color: #929292;
+		}
+	}
 }
 .bottom-feedback-form__wrapper{
 	display: flex;
