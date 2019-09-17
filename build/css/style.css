@@ -3406,6 +3406,7 @@ textarea, input {
 
 .page-header__icon {
   background: url(../img/svg/logo.svg) no-repeat;
+  background-size: contain;
   display: inline-block;
   width: 193px;
   height: 39px; }
