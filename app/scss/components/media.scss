@@ -236,25 +236,6 @@
 	.menu404__link {
 	    font-size: 24px;
 	}
-	.top-404{
-		margin-left: 75px;
-	}
-	.top-404 .page-title,
-	.add404{
-	    margin-left: -135px;
-	}
-	.menu404__item{
-		width: 25%;
-	}
-	.menu404__item--full{
-		width: 100%;
-	}
-	.menu404__item--full .menu404-second-wrap{
-		flex-wrap:wrap;
-	}
-	.menu404__item--full .menu404-second{
-		width: 50%;
-	}
 	.department{
 	    flex: 0 0 50%;
 	    max-width: 50%;
@@ -700,10 +681,6 @@
 	.collection .index-info-news__item{
 		margin-bottom: 0;
 	}
-	.top-404:before {
-	    width: 215px;
-	    height: 45px;
-	}
 }
 
 @media screen and (max-width: 800px){
@@ -1104,15 +1081,7 @@
 		font-size: 20px;
 	}
 	.top-404{
-		margin-left: 0;
-		padding: 20px;
-	}
-	.top-404 .page-title, .add404 {
-	    margin-left: 0;
-	}
-	.add404{
-		font-size: 24px;
-		margin-bottom: 20px;
+		margin-bottom: 0;
 	}
 	.layout--404 .page-title h1 {
 	    font-size: 40px;

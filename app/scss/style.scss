@@ -1456,7 +1456,7 @@ a.breadcrumbs__item{
 		}
 	}
 	.page-content {
-	    padding-top: 60px;
+	    padding-top: 33px;
 	}
 }
 
@@ -1464,17 +1464,22 @@ a.breadcrumbs__item{
 .add404{
 	font-size: 36px;
 	font-family: 'playfair_displayregular';
-	    margin-left: -235px;
-	        margin-bottom: 53px;
+	 margin-bottom: 30px;
 }
 
+.img404{
+	margin-bottom: 33px;
+	img{
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+}
 
 .top-404{
-	    max-width: 849px;
-    margin: 28px 0 44px 161px;
+	    max-width: 657px;
+    margin: 0 auto 44px auto;
     background: #FFFFFF;
-    border: 4px solid #EAEAEA;
-    padding: 48px 126px 54px 68px;
     font-size: 14px;
     line-height: 1.2;
     position: relative;
@@ -1506,17 +1511,6 @@ a.breadcrumbs__item{
 				height: 2px;
 		    }
 		}
-	}
-	&:before{
-		content: "";
-		display: inline-block;
-		background: url(../img/svg/logo.svg) no-repeat;
-		width: 287px;
-		height: 58px;
-		background-size: contain;
-		position: absolute;
-		    right: 20px;
-    top: 65px;
 	}
 }
 

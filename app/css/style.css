@@ -5854,20 +5854,24 @@ a.breadcrumbs__item {
     font-size: 70px;
     line-height: 1.1; }
   .layout--404 .page-content {
-    padding-top: 60px; }
+    padding-top: 33px; }
 
 .add404 {
   font-size: 36px;
   font-family: 'playfair_displayregular';
-  margin-left: -235px;
-  margin-bottom: 53px; }
+  margin-bottom: 30px; }
+
+.img404 {
+  margin-bottom: 33px; }
+  .img404 img {
+    display: block;
+    max-width: 100%;
+    height: auto; }
 
 .top-404 {
-  max-width: 849px;
-  margin: 28px 0 44px 161px;
+  max-width: 657px;
+  margin: 0 auto 44px auto;
   background: #FFFFFF;
-  border: 4px solid #EAEAEA;
-  padding: 48px 126px 54px 68px;
   font-size: 14px;
   line-height: 1.2;
   position: relative; }
@@ -5892,16 +5896,6 @@ a.breadcrumbs__item {
         background-color: #000;
         width: 9px;
         height: 2px; }
-  .top-404:before {
-    content: "";
-    display: inline-block;
-    background: url(../img/svg/logo.svg) no-repeat;
-    width: 287px;
-    height: 58px;
-    background-size: contain;
-    position: absolute;
-    right: 20px;
-    top: 65px; }
 
 .go-main {
   color: #000;
@@ -11403,21 +11397,6 @@ ymaps[class*="-copyright"] {
     padding: 15px; }
   .menu404__link {
     font-size: 24px; }
-  .top-404 {
-    margin-left: 75px; }
-  .top-404 .page-title,
-  .add404 {
-    margin-left: -135px; }
-  .menu404__item {
-    width: 25%; }
-  .menu404__item--full {
-    width: 100%; }
-  .menu404__item--full .menu404-second-wrap {
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-  .menu404__item--full .menu404-second {
-    width: 50%; }
   .department {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 50%;
@@ -11776,10 +11755,7 @@ ymaps[class*="-copyright"] {
   .collection .index-info-news__inner {
     padding: 0; }
   .collection .index-info-news__item {
-    margin-bottom: 0; }
-  .top-404:before {
-    width: 215px;
-    height: 45px; } }
+    margin-bottom: 0; } }
 
 @media screen and (max-width: 800px) {
   .page-footer-contacts__item {
@@ -12120,14 +12096,7 @@ ymaps[class*="-copyright"] {
   .tech {
     font-size: 20px; }
   .top-404 {
-    margin-left: 0;
-    padding: 20px; }
-  .top-404 .page-title,
-  .add404 {
-    margin-left: 0; }
-  .add404 {
-    font-size: 24px;
-    margin-bottom: 20px; }
+    margin-bottom: 0; }
   .layout--404 .page-title h1 {
     font-size: 40px; }
   .department {
