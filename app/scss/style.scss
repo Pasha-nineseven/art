@@ -1371,17 +1371,24 @@ a.breadcrumbs__item{
 }
 
 .layout--tech{
+	background: url(../img/content/tech.jpg) center no-repeat;
+	background-size: cover;
+	color: #fff;
+	    min-height: 100vh; 
 	.page-title .container-fluid {
 	    max-width: 1360px;
+	}
+	.page-header__logo{
+		color: #fff;
 	}
 	h1{
 		font-size: 70px;
 		    line-height: 1.05;
 	}
 	.page-header__icon {
-	    background: url(../img/svg/logo.svg) no-repeat;
-	    width: 287px;
-	    height: 58px;
+	    background: url(../img/svg/logo-w.svg) no-repeat;
+	    width: 376px;
+		height: 75.2px;
 	    background-size: contain;
 	}
 	.page-content{
@@ -1390,15 +1397,28 @@ a.breadcrumbs__item{
 }
 
 .tech{
-	padding-top: 54px;
+	padding-top: 28px;
 	font-size: 30px;
 	line-height: 1.2;
 	    font-family: 'playfair_displayregular';
+	    color: #fff;
 	p{
 		margin-bottom: 50px;
 		&:last-child{
 			margin-bottom: 0;
 		}
+	}
+}
+
+.tech__add{
+	font-size: 16px;
+	font-family: "Roboto", Arial, sans-serif;
+    font-weight: 300;
+	span{
+		display: block;
+		font-size: 30px;
+		font-family: 'playfair_displayregular';
+		margin-bottom: 10px;
 	}
 }
 

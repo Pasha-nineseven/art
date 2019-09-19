@@ -1078,7 +1078,7 @@
 	    font-size: 40px;
 	}
 	.tech{
-		font-size: 20px;
+		font-size: 16px;
 	}
 	.top-404{
 		margin-bottom: 0;
@@ -1124,6 +1124,12 @@
 	.collection-full__link:before,
 	.collection-full__link:after{
 		display: none;
+	}
+	.tech p {
+	    margin-bottom: 20px;
+	}
+	.tech__add span{
+		font-size: 20px;
 	}
 }
 
@@ -1781,6 +1787,10 @@
 	    top: 30px;
 	    right: auto;
 	    left: 20px;
+	}
+	.layout--tech .page-header__icon {
+	    width: 146px;
+	    height: 31px;
 	}
 }
 

@@ -5783,31 +5783,46 @@ a.breadcrumbs__item {
 .mobile-filter-toggle__wrap {
   padding: 12px 35px 12px 20px; }
 
-.layout--tech .page-title .container-fluid {
-  max-width: 1360px; }
-
-.layout--tech h1 {
-  font-size: 70px;
-  line-height: 1.05; }
-
-.layout--tech .page-header__icon {
-  background: url(../img/svg/logo.svg) no-repeat;
-  width: 287px;
-  height: 58px;
-  background-size: contain; }
-
-.layout--tech .page-content {
-  padding-top: 27px; }
+.layout--tech {
+  background: url(../img/content/tech.jpg) center no-repeat;
+  background-size: cover;
+  color: #fff;
+  min-height: 100vh; }
+  .layout--tech .page-title .container-fluid {
+    max-width: 1360px; }
+  .layout--tech .page-header__logo {
+    color: #fff; }
+  .layout--tech h1 {
+    font-size: 70px;
+    line-height: 1.05; }
+  .layout--tech .page-header__icon {
+    background: url(../img/svg/logo-w.svg) no-repeat;
+    width: 376px;
+    height: 75.2px;
+    background-size: contain; }
+  .layout--tech .page-content {
+    padding-top: 27px; }
 
 .tech {
-  padding-top: 54px;
+  padding-top: 28px;
   font-size: 30px;
   line-height: 1.2;
-  font-family: 'playfair_displayregular'; }
+  font-family: 'playfair_displayregular';
+  color: #fff; }
   .tech p {
     margin-bottom: 50px; }
     .tech p:last-child {
       margin-bottom: 0; }
+
+.tech__add {
+  font-size: 16px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 300; }
+  .tech__add span {
+    display: block;
+    font-size: 30px;
+    font-family: 'playfair_displayregular';
+    margin-bottom: 10px; }
 
 .cookies {
   background: #F1F1F1;
@@ -12094,7 +12109,7 @@ ymaps[class*="-copyright"] {
   .layout--tech h1 {
     font-size: 40px; }
   .tech {
-    font-size: 20px; }
+    font-size: 16px; }
   .top-404 {
     margin-bottom: 0; }
   .layout--404 .page-title h1 {
@@ -12131,7 +12146,11 @@ ymaps[class*="-copyright"] {
     top: 20px; }
   .collection-full__link:before,
   .collection-full__link:after {
-    display: none; } }
+    display: none; }
+  .tech p {
+    margin-bottom: 20px; }
+  .tech__add span {
+    font-size: 20px; } }
 
 @media screen and (max-width: 700px) {
   .benefits__wrap {
@@ -12674,7 +12693,10 @@ ymaps[class*="-copyright"] {
   .collection .collection__print {
     top: 30px;
     right: auto;
-    left: 20px; } }
+    left: 20px; }
+  .layout--tech .page-header__icon {
+    width: 146px;
+    height: 31px; } }
 
 @media screen and (max-width: 576px) {
   .projects__item--sm-height .projects__name {
