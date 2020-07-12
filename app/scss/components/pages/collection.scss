@@ -302,9 +302,25 @@
 	background: #FFFFFF;
 	border: 4px solid #EAEAEA;
 	margin-bottom: 20px;
-	    padding: 21px 23px 17px;
+	padding: 21px 23px 17px;
+	max-width: 415px;
 	&:last-child{
 		margin-bottom: 0;
+	}
+	a{
+		text-decoration: none;
+	}
+	.download__txt{
+		//border-bottom: 1px solid #286DB6;
+		text-decoration: underline;
+		&:after{
+			display: none;
+		}
+	}
+	&:hover{
+		.download__txt{
+			//border-bottom: 1px solid #000;
+		}
 	}
 }
 

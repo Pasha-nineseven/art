@@ -10240,9 +10240,16 @@ ul.catalog-category-list {
   background: #FFFFFF;
   border: 4px solid #EAEAEA;
   margin-bottom: 20px;
-  padding: 21px 23px 17px; }
+  padding: 21px 23px 17px;
+  max-width: 415px; }
   .collection-add-downloads__item:last-child {
     margin-bottom: 0; }
+  .collection-add-downloads__item a {
+    text-decoration: none; }
+  .collection-add-downloads__item .download__txt {
+    text-decoration: underline; }
+    .collection-add-downloads__item .download__txt:after {
+      display: none; }
 
 .collection-add-chars__wrap {
   margin-bottom: 13px;
@@ -12156,7 +12163,9 @@ ymaps[class*="-copyright"] {
   .tech p {
     margin-bottom: 20px; }
   .tech__add a {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .collection-add-downloads__item {
+    max-width: 100%; } }
 
 @media screen and (max-width: 700px) {
   .benefits__wrap {
