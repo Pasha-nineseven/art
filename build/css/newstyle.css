@@ -1,0 +1,8 @@
+.m-mobile {
+  display: none; }
+
+@media screen and (max-width: 600px) {
+  .m-desktop {
+    display: none; }
+  .m-mobile {
+    display: block; } }
