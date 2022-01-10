@@ -1,6 +1,9 @@
 .m-mobile {
   display: none; }
 
+.main-products__slider {
+  margin-bottom: 60px; }
+
 @media screen and (max-width: 600px) {
   .m-desktop {
     display: none; }
